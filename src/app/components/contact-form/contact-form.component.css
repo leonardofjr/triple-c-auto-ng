@@ -1,0 +1,17 @@
+#contact-form .form-group {
+    margin: 1.3em .5em;
+}
+#contact-form .form-group input  {
+    width: 90%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 15px;
+    font-size:1em;
+}
+#contact-form .form-group textarea  {
+    width: 90%;
+    font-size:1.3em;
+    padding: 15px;
+    height: 190px;
+}

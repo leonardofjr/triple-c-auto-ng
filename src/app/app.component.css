@@ -1,0 +1,27 @@
+.container {
+    width: 1260px;
+    margin: auto;
+}
+
+/**** Header ****/
+header {
+        
+}
+
+header .container {
+      display: grid;
+      grid-template-columns: auto auto;
+}
+
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 2px 5px;
+}
+
+/**** Grid System ****/
+
