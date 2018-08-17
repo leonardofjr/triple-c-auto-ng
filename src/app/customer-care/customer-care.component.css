@@ -21,7 +21,7 @@
 
     #commercial-cleaning .content-container {
         display: flex;
-        width: 50%;
+            width: 50%;
         flex-direction: row;
     }
 

@@ -6,7 +6,7 @@
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    #commercial-cleaning {
+    #high-quality {
         display: flex;
         flex-direction: column;
     }
@@ -14,19 +14,17 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    #commercial-cleaning {
+    #high-quality {
         display: flex;
         flex-direction: row;
     }
 
-    #commercial-cleaning .content-container {
-        display: flex;
-        width: 50%;
-        flex-direction: row;
+    #high-quality .content-container {
+        width: 70%;
     }
 
-    #commercial-cleaning .content-container .content {
-        width: 80%;
+    #high-quality .content-container .content {
+    
     }
 } 
 
