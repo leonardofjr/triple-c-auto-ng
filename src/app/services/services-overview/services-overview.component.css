@@ -15,8 +15,17 @@
         flex-direction: row;
         justify-content: space-around;
     }
+    #services-overview .content-container .img-container {
+        margin: 1em;
+    }
+    #services-overview .content-container img {
+        width: 100%;
+    }
     #services-overview .content {
         width: 33.99%;
+        display: flex;
+        flex-direction: row;
+        width: 50%;
     }
 
 } 

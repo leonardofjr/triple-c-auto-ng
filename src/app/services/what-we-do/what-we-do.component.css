@@ -22,6 +22,9 @@
     }
     #what-we-do .content {
         width: 33.99%;
+        display: flex;
+        flex-direction: row;
+        
     }
 
 } 

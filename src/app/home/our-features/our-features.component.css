@@ -10,6 +10,26 @@
         display: flex;
         flex-direction: column;
     }
+
+    #our-features > .content-container:nth-child(1) .content-header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #our-features > .content-container .img-container {
+       margin: 1.3em;
+
+    }
+    #our-features > .content-container .img-container img {
+       width: 100%;
+
+    }
+
+     #our-features > .content-container:nth-child(3) .content-header {
+         display: flex;
+         flex-direction: row-reverse;
+     }
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     #our-features {
@@ -21,9 +41,7 @@
         width: 20%;
     }
 
-    #our-features > .content-container:nth-child(2) {
-        width: 100%;
-    }
+
 
 } 
 

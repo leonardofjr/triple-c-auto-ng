@@ -1,11 +1,16 @@
 
-
+#why-choose-us > .content-container .content-header {
+    display: flex;
+    flex-direction: row;
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     #why-choose-us {
         display: flex;
         flex-direction: column;
     }
+
+
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -13,7 +18,6 @@
     #why-choose-us .content-container {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
     }
     #why-choose-us .content {
         width: 33.99%;

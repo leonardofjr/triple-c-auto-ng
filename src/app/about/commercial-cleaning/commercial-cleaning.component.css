@@ -21,12 +21,15 @@
 
     #commercial-cleaning .content-container {
         display: flex;
-        width: 50%;
         flex-direction: row;
     }
 
-    #commercial-cleaning .content-container .content {
-        width: 80%;
+    #commercial-cleaning .content-container .img-container  {
+        margin: 1.3em;
+    }
+
+    #commercial-cleaning .content-container .img-container img {
+        width: 100%;
     }
 } 
 

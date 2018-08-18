@@ -4,24 +4,25 @@
 }
 
 /**** Header ****/
-header {
-        
-}
-
 header .container {
-      display: grid;
-      grid-template-columns: auto auto;
+      display: flex;
+      flex-direction: row;
+}
+
+#logo-container img {
+    width: 100%;
 }
 
 
-header nav ul {
+#main-navigation ul {
     list-style-type: none;
 }
 
-header nav ul li {
+#main-navigation ul li {
     display: inline-block;
     margin: 2px 5px;
 }
+
 
 /**** Grid System ****/
 
