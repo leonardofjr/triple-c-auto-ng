@@ -9,6 +9,10 @@
     #what-we-offer .content-container .img-container {
        margin: 1em 0;
     }
+    #what-we-offer .content-container .img-container div {
+        box-sizing: border-box;
+        padding: 30px;
+    }
         #what-we-offer .content-container .img-container img {
         width:100%;
     }
@@ -19,26 +23,33 @@
     #what-we-offer {
         display: flex;
         flex-direction: row;
+        flex-basis: 50%;
     }
 
     #what-we-offer .content-container  {
-        width: 50%;
+
         padding: .8em;
     }
     #what-we-offer .content-container .img-container {
         display: flex;
         flex-direction: row;
+        flex-basis: 50%;
        
     }
+    #what-we-offer .content-container .img-container div {
+        flex-basis: 50%;
+        box-sizing: border-box;
+        padding: 30px;
+    }
     #what-we-offer .content-container .img-container img {
-        width: 50%;
+        width: 100%;
     }
     #what-we-offer .content-container .img-container img:nth-child(1) {
-        padding-right: .5em;
+    
     }
     
     #what-we-offer .content-container .img-container img:nth-child(2) {
-        padding-left: .5em;
+    
     }
 } 
 

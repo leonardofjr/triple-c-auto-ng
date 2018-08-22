@@ -5,7 +5,7 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
+html, body, div, span, apmlet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -25,10 +25,10 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+/* HTML5 dismlay-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+	dismlay: block;
 }
 
 
@@ -78,7 +78,6 @@ body {
 /**** Typography ****/
 p {
     font-size: 1.1em;
-    margin: .5em 0;
 }
 h1 {
     font-weight: 800;
@@ -86,25 +85,24 @@ h1 {
 }
 
 h2 {
-    
-    margin: .5em;
     font-weight: 400;
     font-size: 2.4em;
 }
 
 
 h3 {
-    margin: .5em;
     font-weight: 400;
     font-size: 1.4em;
 }
 
 h5 {
-    margin: .5em;
     font-weight:400;
     font-size: 1.2em;
 }
 
+ul {
+    padding-left: 3em;
+}
 /**** Grid System ****/
 
 .full-width {
@@ -132,6 +130,21 @@ h5 {
 
 }
 
+.ml-1 {
+    padding-left: 10px;
+}
+
+.mr-1 {
+    padding-right: 10px;
+}
+
+.mt-1 {
+    padding-top: 10px;
+}
+
+.mb-1 {
+    padding-bottom: 50px;
+}
 
 .text-center {
     text-align: center;
@@ -158,3 +171,18 @@ main {
     padding-top: 150px;
 }
 
+img {
+
+}
+
+.primary-background-gradient {
+    color: #fff!important;
+    background: rgba(23,26,74,1);
+background: -moz-linear-gradient(left, rgba(23,26,74,1) 0%, rgba(61,66,120,1) 50%, rgba(23,26,74,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(23,26,74,1)), color-stop(50%, rgba(61,66,120,1)), color-stop(100%, rgba(23,26,74,1)));
+background: -webkit-linear-gradient(left, rgba(23,26,74,1) 0%, rgba(61,66,120,1) 50%, rgba(23,26,74,1) 100%);
+background: -o-linear-gradient(left, rgba(23,26,74,1) 0%, rgba(61,66,120,1) 50%, rgba(23,26,74,1) 100%);
+background: -ms-linear-gradient(left, rgba(23,26,74,1) 0%, rgba(61,66,120,1) 50%, rgba(23,26,74,1) 100%);
+background: linear-gradient(to right, rgba(23,26,74,1) 0%, rgba(61,66,120,1) 50%, rgba(23,26,74,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171a4a', endColorstr='#171a4a', GradientType=1 );
+}

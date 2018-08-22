@@ -1,3 +1,7 @@
+.full-width {
+    background-color: #ddd;
+        padding: 10em .2em;
+}
 
 #why-choose-us > .content-container .content-header {
     display: flex;
@@ -19,10 +23,12 @@
         display: flex;
         flex-direction: row;
     }
+    
     #why-choose-us .content {
-        width: 33.99%;
+        flex: 0 0 33.33%;
+        padding: 25px;
     }
-
+    
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */
