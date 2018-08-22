@@ -15,7 +15,6 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
 import { SliderComponent } from './slider/slider.component';
 import { OurVisionComponent } from './about/our-vision/our-vision.component';
 import { AboutUsIntroductionComponent } from './about/about-us-introduction/about-us-introduction.component';
-import { CommercialCleaningComponent } from './about/commercial-cleaning/commercial-cleaning.component';
 import { WhatWeDoComponent } from './services/what-we-do/what-we-do.component';
 import { ServicesOverviewComponent } from './services/services-overview/services-overview.component';
 import { GreenCleaningComponent } from './services/green-cleaning/green-cleaning.component';
@@ -25,6 +24,8 @@ import { OurClientsComponent } from './our-clients/our-clients.component';
 import { OurProductsComponent } from './customer-care/our-products/our-products.component';
 import { WhatWeOfferComponent } from './customer-care/what-we-offer/what-we-offer.component';
 import { HighQualityComponent } from './customer-care/high-quality/high-quality.component';
+import { OurMissionComponent } from './about/our-mission/our-mission.component';
+import { CleaningGuaranteeComponent } from './about/cleaning-guarantee/cleaning-guarantee.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,6 @@ import { HighQualityComponent } from './customer-care/high-quality/high-quality.
     SliderComponent,
     OurVisionComponent,
     AboutUsIntroductionComponent,
-    CommercialCleaningComponent,
     WhatWeDoComponent,
     ServicesOverviewComponent,
     GreenCleaningComponent,
@@ -51,6 +51,8 @@ import { HighQualityComponent } from './customer-care/high-quality/high-quality.
     OurProductsComponent,
     WhatWeOfferComponent,
     HighQualityComponent,
+    OurMissionComponent,
+    CleaningGuaranteeComponent,
   ],
   imports: [
     HttpClientModule,

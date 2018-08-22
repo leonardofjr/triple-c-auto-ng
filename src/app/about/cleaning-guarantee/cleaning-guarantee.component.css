@@ -1,33 +1,34 @@
-.full-width {
-    background-color: #ddd;
-}
 
-#why-choose-us > .content-container .content-header {
-    display: flex;
-    flex-direction: row;
+.full-width {
+    color: #000;
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    #why-choose-us {
+    #cleaning-guarantee {
         display: flex;
         flex-direction: column;
     }
-
-
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    #why-choose-us .content-container {
+    #cleaning-guarantee {
         display: flex;
         flex-direction: row;
     }
-    
-    #why-choose-us .content {
-        flex: 0 0 33.33%;
-        padding: 25px;
+
+    #cleaning-guarantee .content-container {
+        flex-basis: 50%;
     }
-    
+
+    #cleaning-guarantee .img-container  {
+        padding: 30px;
+        flex-basis: 50%;
+    }
+
+    #cleaning-guarantee .img-container img {
+        width: 100%;
+    }
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */
