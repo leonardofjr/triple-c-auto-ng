@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FreeQuoteComponent } from './free-quote.component';
+import { ServiceAreasComponent } from './service-areas.component';
 
-describe('FreeQuoteComponent', () => {
-  let component: FreeQuoteComponent;
-  let fixture: ComponentFixture<FreeQuoteComponent>;
+describe('ServiceAreasComponent', () => {
+  let component: ServiceAreasComponent;
+  let fixture: ComponentFixture<ServiceAreasComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FreeQuoteComponent ]
+      declarations: [ ServiceAreasComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FreeQuoteComponent);
+    fixture = TestBed.createComponent(ServiceAreasComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

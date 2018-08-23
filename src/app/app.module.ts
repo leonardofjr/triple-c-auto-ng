@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
-import { FreeQuoteComponent } from './free-quote/free-quote.component';
 import { HomeComponent } from './home/home.component';
 import { OurCoreValuesComponent } from './home/our-core-values/our-core-values.component';
 import { OurFeaturesComponent } from './home/our-features/our-features.component';
@@ -15,7 +14,7 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
 import { SliderComponent } from './slider/slider.component';
 import { OurVisionComponent } from './about/our-vision/our-vision.component';
 import { AboutUsIntroductionComponent } from './about/about-us-introduction/about-us-introduction.component';
-import { WhatWeDoComponent } from './services/what-we-do/what-we-do.component';
+import { WhatWeDoComponent } from './about/what-we-do/what-we-do.component';
 import { ServicesOverviewComponent } from './services/services-overview/services-overview.component';
 import { GreenCleaningComponent } from './services/green-cleaning/green-cleaning.component';
 import { CleaningServicesListComponent } from './services/cleaning-services-list/cleaning-services-list.component';
@@ -26,13 +25,13 @@ import { WhatWeOfferComponent } from './customer-care/what-we-offer/what-we-offe
 import { HighQualityComponent } from './customer-care/high-quality/high-quality.component';
 import { OurMissionComponent } from './about/our-mission/our-mission.component';
 import { CleaningGuaranteeComponent } from './about/cleaning-guarantee/cleaning-guarantee.component';
+import { ServiceAreasComponent } from './service-areas/service-areas.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     ServicesComponent,
-    FreeQuoteComponent,
     HomeComponent,
     OurCoreValuesComponent,
     OurFeaturesComponent,
@@ -53,6 +52,7 @@ import { CleaningGuaranteeComponent } from './about/cleaning-guarantee/cleaning-
     HighQualityComponent,
     OurMissionComponent,
     CleaningGuaranteeComponent,
+    ServiceAreasComponent,
   ],
   imports: [
     HttpClientModule,

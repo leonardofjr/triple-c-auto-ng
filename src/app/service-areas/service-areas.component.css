@@ -1,29 +1,24 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    #commercial-cleaning {
+    #service-areas {
         display: flex;
         flex-direction: column;
+    }
+    #service-areas .content-container {
+        margin-bottom: 50px;
     }
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    #green-cleaning {
-        display: flex;
-        flex-direction: row;
+    #service-areas {
+
     }
-
-    #green-cleaning .content-container {
-        padding: 2em 4em;
-        flex-basis: 50%;
+    #service-areas .content-container {
+        margin-bottom: 50px;
     }
-
-
-    #green-cleaning .content {
-        
+    #service-areas .content {
     }
-
-
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */

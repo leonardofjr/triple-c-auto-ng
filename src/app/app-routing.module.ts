@@ -3,18 +3,18 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { ServicesComponent } from './services/services.component';
-import { CustomerCareComponent } from './customer-care/customer-care.component';
+import { ServiceAreasComponent } from './service-areas/service-areas.component';
 import { OurClientsComponent } from './our-clients/our-clients.component';
-import { FreeQuoteComponent } from './free-quote/free-quote.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'services', component: ServicesComponent },
-  { path: 'customer-care', component: CustomerCareComponent },
+  { path: 'service-areas', component: ServiceAreasComponent },
   { path: 'our-clients', component: OurClientsComponent },
-  { path: 'free-quote', component: FreeQuoteComponent }
+  { path: 'contact', component: ContactComponent }
 ];
 @NgModule({
   exports: [RouterModule],

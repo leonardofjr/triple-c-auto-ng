@@ -1,8 +1,3 @@
-
-.full-width {
-    background-color: #eee;
-    color: #000;
-}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     #commercial-cleaning {
@@ -19,9 +14,13 @@
     }
 
     #green-cleaning .content-container {
-        display: flex;
-        flex-direction: row;
-         width: 50%;
+        padding: 2em 4em;
+        flex-basis: 50%;
+    }
+
+
+    #green-cleaning .content {
+        
     }
 
 
