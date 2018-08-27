@@ -26,6 +26,8 @@ import { HighQualityComponent } from './customer-care/high-quality/high-quality.
 import { OurMissionComponent } from './about/our-mission/our-mission.component';
 import { CleaningGuaranteeComponent } from './about/cleaning-guarantee/cleaning-guarantee.component';
 import { ServiceAreasComponent } from './service-areas/service-areas.component';
+import { PrimaryMenuComponent } from './components/menus/primary-menu/primary-menu.component';
+import { MobileMenuComponent } from './components/menus/mobile-menu/mobile-menu.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +55,8 @@ import { ServiceAreasComponent } from './service-areas/service-areas.component';
     OurMissionComponent,
     CleaningGuaranteeComponent,
     ServiceAreasComponent,
+    PrimaryMenuComponent,
+    MobileMenuComponent,
   ],
   imports: [
     HttpClientModule,
