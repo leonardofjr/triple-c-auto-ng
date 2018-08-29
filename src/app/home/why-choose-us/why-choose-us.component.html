@@ -1,3 +1,4 @@
+{{b.sasa}}
 <div class="full-width  primary-background-gradient">
   <div class="container">
     <h2 class="text-center">Why Choose Us</h2>
@@ -5,83 +6,17 @@
 
     <div id="why-choose-us" class="text-center">
       <div class="content-container mb-1">
-        <div class="content text-left">
-                <div class="content-header">
-                  <p>Icon</p>
-                  <h5>QUALITY CONTROL</h5>
-                </div>
-                <!-- End of Content Header -->
-                <div class="content-body">
-                  <p>A diverse client base has helped us develop our quality control program. Our quality control program stresses active involvement of management, employees and clients.</p>
-                </div>
-                <!-- End of Content Body -->
+          <div class="content text-left" *ngFor="let item of content; index as i">
+            <div class="content-header">
+              <img src="{{item.icon.url}}" alt="{{item.icon.altText}}" class="text-center">
+              <h5 class="text-center">{{item.heading}}</h5>
             </div>
-            <!-- End of Content -->
-            <div class="content text-left">
-                <div class="content-header">
-                  <p>Icon</p>
-                  <h5>EXPERIENCE</h5>
-                </div>
-                <!-- End of Content Header -->
-                <div class="content-body">
-                  <p>ISA CLEAN has been providing cleaning services for more than 20 years. Our operations managers have each been with our company for over 25 years.</p>
-                </div>
-                <!-- End of Content Body -->
+            <!-- End of Content Header -->
+            <div class="content-body">
+              <p>{{item.text}}</p>
             </div>
-            <!-- End of Content -->
-            <div class="content text-left">
-                <div class="content-header">
-                  <p>Icon</p>
-                  <h5>WELL TRAINED STAFFS</h5>
-                </div>
-                <!-- End of Content Header -->
-                <div class="content-body">
-                  <p>All ISA CLEAN employees are WHMIS, safety, and task trained. Our training is specific to your location, to ensure that your expectations are met. Additional training is provided when new procedures and equipment are available.</p>
-                </div>
-                <!-- End of Content Body -->
-            </div>
-            <!-- End of Content -->
-      </div>
-      <!-- End of Content Container -->
-
-      <div class="content-container mb-1">
-        <div class="content text-left">
-                <div class="content-header">
-                  <p>Icon</p>
-                  <h5>INSURANCE</h5>
-                </div>
-                <!-- End of Content Header -->
-                <div class="content-body">
-                  <p>A cleaning contractor should be able to provide a current insurance certificate, and a current WSIB Certificate of Clearance. If they can not, then you may be liable for accidents, injuries or damages.</p>
-                </div>
-                <!-- End of Content Body -->
-            </div>
-            <!-- End of Content -->
-            <div class="content text-left">
-                <div class="content-header">
-                  <p>Icon</p>
-                  <h5>INSPECTIONS</h5>
-                </div>
-                <!-- End of Content Header -->
-                <div class="content-body">
-                  <p>An inspection checklist is developed with your company and your requirements in mind. Supervisors visit your site to complete
-                  the checklist with our employees. A copy of the inspection is available for you to review.</p>
-                </div>
-                <!-- End of Content Body -->
-            </div>
-            <!-- End of Content -->
-            <div class="content text-left">
-                <div class="content-header">
-                  <p>Icon</p>
-                  <h5>GREEN CLEAN</h5>
-                </div>
-                <!-- End of Content Header -->
-                <div class="content-body">
-                  <p>ISA CLEAN offers a “GREEN CLEAN” option where our staff will only use certified green products within your facility.</p>
-                </div>
-                <!-- End of Content Body -->
-            </div>
-            <!-- End of Content -->
+            <!-- End of Content Body -->
+          </div>
       </div>
       <!-- End of Content Container -->
 

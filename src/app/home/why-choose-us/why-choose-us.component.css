@@ -21,11 +21,13 @@
     #why-choose-us .content-container {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
     }
     
     #why-choose-us .content {
         flex: 0 0 33.33%;
         padding: 25px;
+        box-sizing: border-box;
     }
     
 } 
