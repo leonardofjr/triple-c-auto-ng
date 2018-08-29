@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>IsaNg</title>
+  <title>ISA CLEAN</title>
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,29 +12,5 @@
 <body>
   <app-root></app-root>
 </body>
-<script type="text/javascript">
-  $('.toggle').click((e) => {
-    let target = $(e.currentTarget).data("target");
-    let collapsedStatus = $(e.currentTarget).data("collapsed");
-
-    if (collapsedStatus !== 'on') {
-      $(target).addClass('slide-in');
-      $(e.currentTarget).addClass('slide-in-toggler');
-      $(e.currentTarget).data("collapsed", "on");
-    }
-    else {
-      $(target).removeClass('slide-in');
-      $(e.currentTarget).removeClass('slide-in-toggler');
-      $(e.currentTarget).data("collapsed", "off");
-    }
-  });
-
-
-    $('#mobile-menu a').click((e) => { 
-      $('#mobile-menu').removeClass('slide-in');
-      $('.mobile-nav-toggler').removeClass('slide-in-toggler');
-      $('.mobile-nav-toggler').data("collapsed", "off");
-    })
-
-</script>
+<script type="text/javascript" src="./src/scripts.js"></script>
 </html>
