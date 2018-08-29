@@ -1,12 +1,11 @@
-{{b.sasa}}
 <div class="full-width  primary-background-gradient">
   <div class="container">
-    <h2 class="text-center">Why Choose Us</h2>
+    <h2 class="text-center">{{content.mainHeading}}</h2>
     <p class="text-center mb-1">We are confident that our prices for cleaning services and cleaning quality will be acceptable for you.</p>
 
     <div id="why-choose-us" class="text-center">
       <div class="content-container mb-1">
-          <div class="content text-left" *ngFor="let item of content; index as i">
+          <div class="content text-left" *ngFor="let item of content.features; index as i">
             <div class="content-header">
               <img src="{{item.icon.url}}" alt="{{item.icon.altText}}" class="text-center">
               <h5 class="text-center">{{item.heading}}</h5>
@@ -21,3 +20,5 @@
       <!-- End of Content Container -->
 
 </div>
+
+
