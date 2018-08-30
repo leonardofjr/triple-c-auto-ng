@@ -1,0 +1,46 @@
+<app-slider></app-slider>
+<!-- Our Core Values -->
+<div class="full-width  primary-background-gradient">
+    <div class="container">
+        <h2 class="text-center">{{ourCoreValues.mainHeading}}</h2>
+        <p class="text-center mb-1">{{ourCoreValues.text}}</p>
+
+        <div id="our-core-values" class="text-center">
+            <div class="content" *ngFor="let item of ourCoreValues.values; index as i">
+                <h3>{{item.heading}}</h3>
+                <p>{{item.text}}</p>
+            </div><!-- End of Content Body -->
+        </div>
+    </div>
+</div>
+
+<!-- Our Features -->
+<app-our-features></app-our-features>
+
+<!-- Why Choose Us -->
+<div class="full-width  primary-background-gradient">
+    <div class="container">
+        <h2 class="text-center">{{whyChooseUs.mainHeading}}</h2>
+        <p class="text-center mb-1">{{whyChooseUs.text}}</p>
+
+        <div id="why-choose-us" class="text-center">
+                <div class="content text-left" *ngFor="let item of whyChooseUs.features; index as i">
+                    <div class="content-header">
+                        <img src="{{item.icon.url}}" alt="{{item.icon.altText}}" class="text-center">
+                        <h5 class="text-center">{{item.heading}}</h5>
+                    </div>
+                    <!-- End of Content Header -->
+                    <div class="content-body">
+                        <p>{{item.text}}</p>
+                    </div>
+                    <!-- End of Content Body -->
+                </div>
+        </div>
+    </div>
+</div>
+
+<div class="full-width">
+    <div class="container">
+        <app-contact-form></app-contact-form>
+    </div>
+</div>

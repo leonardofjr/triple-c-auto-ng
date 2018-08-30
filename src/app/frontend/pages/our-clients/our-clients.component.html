@@ -1,0 +1,22 @@
+<div class="full-width primary-background-gradient">
+  <div class="container">
+    <div id="our-clients" class="text-center">
+       <div class="content-container">
+          <h2>{{content.mainHeading}}</h2>
+          <p [innerHTML]="content.text | keepHtml"></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="full-width">
+  <div class="container">
+    <h2 class="text-center">{{content.ourClients.mainHeading}}</h2>
+    <div id="our-client-logos" class="text-center">
+       <div class="content">
+        <div class="img-container"  *ngFor="let item of content.ourClients.clients; index as i">
+          <img src="{{assetsPath + item.img}}" alt="{{item.altText}}" class="text-center">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

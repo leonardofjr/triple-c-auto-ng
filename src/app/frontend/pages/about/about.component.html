@@ -1,0 +1,58 @@
+
+<div class="full-width  primary-background-gradient">
+    <div class="container">
+        <h2 class="text-center">{{aboutUs.aboutUsIntroduction.mainHeading}}</h2>
+        <div id="about-us-introduction" class="text-center">
+            <div class="content" *ngFor = "let item of aboutUs.aboutUsIntroduction.features;">
+                <h3>{{item.heading}}</h3>
+                <p [innerHTML]= "item.text | keepHtml"></p>
+            </div>
+            <!-- End of Content -->
+        </div>
+    </div>
+</div>
+
+
+<div class="full-width">
+    <div class="container">
+        <div id="our-mission">
+            <div class="content-container">
+                <h2 class="text-center">{{aboutUs.ourMission.mainHeading}}</h2>
+                <p class="text-center">{{aboutUs.ourMission.text}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="full-width">
+    <div class="container">
+        <div id="our-vision">
+            <div class="content-container">
+                <h2 class="text-center">{{aboutUs.ourVision.mainHeading}}</h2>
+                <p class="text-center">{{aboutUs.ourVision.text}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="full-width  primary-background-gradient">
+    <div class="container">
+        <h2 class="text-center">{{aboutUs.whatWeDo.mainHeading}}</h2>
+        <div id="what-we-do" class="text-center">
+                <div class="content text-left" *ngFor = "let item of aboutUs.whatWeDo.features;">
+                    <div class="content-header">
+                        <img src="{{item.icon.url}}" alt="{{item.icon.altText}}">
+                        <h5>{{item.heading}}</h5>
+                    </div>
+                    <div class="content-body">
+                        <p>{{item.text}}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+<app-cleaning-guarantee></app-cleaning-guarantee>

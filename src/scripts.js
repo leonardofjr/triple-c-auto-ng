@@ -4,11 +4,12 @@ $('.toggle').click((e) => {
 
     if (collapsedStatus !== 'on') {
         $(target).addClass('slide-in');
+        $('main').css('padding-left', '200px;')
         $(e.currentTarget).addClass('slide-in-toggler');
         $(e.currentTarget).data("collapsed", "on");
     }
     else {
-        $(target).removeClass('slide-in');
+        $(target).removeClass('slide-in'); 
         $(e.currentTarget).removeClass('slide-in-toggler');
         $(e.currentTarget).data("collapsed", "off");
     }

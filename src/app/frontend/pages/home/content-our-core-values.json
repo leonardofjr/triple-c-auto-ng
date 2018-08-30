@@ -1,0 +1,20 @@
+{
+    "ourCoreValues": {
+        "mainHeading" : "Our Core Values",
+        "text" : "ISA CLEAN is committed to providing the highest quality commercial cleaning service available by exceeding the expectations of our clients, as well as their employees, patients, students, and other visitors to their premises or facilities.",
+            "values":  [
+                {
+                    "heading" : "SAFETY AND SUSTAINABILITY",
+                    "text" : "Safeguarding the health and wellbeing of our clients, our staff, and the environments"
+                 },
+                {
+                    "heading" : "KNOWLEDGE",
+                    "text" : "Fostering a culture that encourages learning and personal development. Being experts in our field"
+                      },
+                {
+                    "heading" : "COMMITMENT",
+                    "text" : "Calling on passion and persistence to deliver excellence in operations"
+                 }
+            ]
+    }
+}

@@ -36,8 +36,20 @@ footer, header, hgroup, menu, nav, section {
     .container {
         margin: auto;
     }
+br {  
+    white-space: pre-line 
+}
+body {
+    transition: padding-left 300ms;
+    padding-left: 0;
+}
 
+.slide-in-body {
+    transition: padding-left 500ms;
+    padding-left: 100px;
+  
 
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .container {

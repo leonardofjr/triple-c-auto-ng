@@ -1,7 +1,8 @@
-#main-header, #mobile-header {
+#main-header{
     position: fixed;
     background: #fff;
     width: 100%;
+        box-shadow: 5px 5px 10px #888;
 }
 
 /**** Header ****/
@@ -31,9 +32,6 @@ header #main-navigation {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    #main-header {
-        display: none;
-    }
 
     #mobile-header {
         position: fixed;
@@ -46,22 +44,14 @@ header #main-navigation {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    #main-header {
-        display: none;
-    }
-
 
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    #main-header {
-        display: block;
-    }
 
-    #mobile-header {
-      display: none;
-    }
+
+
 
 
 

@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutComponent } from './about/about.component';
-import { HomeComponent } from './home/home.component';
-import { ServicesComponent } from './services/services.component';
-import { ServiceAreasComponent } from './service-areas/service-areas.component';
-import { OurClientsComponent } from './our-clients/our-clients.component';
-import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './frontend/pages/about/about.component';
+import { HomeComponent } from './frontend/pages/home/home.component';
+import { ServicesComponent } from './frontend/pages/services/services.component';
+import { ServiceAreasComponent } from './frontend/pages/service-areas/service-areas.component';
+import { OurClientsComponent } from './frontend/pages/our-clients/our-clients.component';
+import { ContactComponent } from './frontend/pages/contact/contact.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },

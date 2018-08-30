@@ -12,5 +12,32 @@
 <body>
   <app-root></app-root>
 </body>
-<script type="text/javascript" src="./src/scripts.js"></script>
+<script type="text/javascript">
+  $('.toggle').click((e) => {
+    let target = $(e.currentTarget).data("target");
+    let collapsedStatus = $(e.currentTarget).data("collapsed");
+
+    if (collapsedStatus !== 'on') {
+      $(target).addClass('slide-in');
+      $(e.currentTarget).addClass('slide-in-toggler');
+      $('body').addClass('slide-in-body');
+      $(e.currentTarget).data("collapsed", "on");
+    }
+    else {
+       $('body').removeClass('slide-in-body');
+      $(target).removeClass('slide-in');
+      $(e.currentTarget).removeClass('slide-in-toggler');
+      $(e.currentTarget).data("collapsed", "off");
+    }
+  });
+
+
+  $('#mobile-menu a').click((e) => {
+     $('body').removeClass('slide-in-body');
+    $('#mobile-menu').removeClass('slide-in');
+    $('.mobile-nav-toggler').removeClass('slide-in-toggler');
+    $('.mobile-nav-toggler').data("collapsed", "off");
+  })
+
+</script>
 </html>

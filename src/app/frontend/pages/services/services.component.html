@@ -1,0 +1,83 @@
+<div class="full-width  primary-background-gradient">
+    <div class="container">
+        <h2 class="text-center">{{services.cleaningServicesList.mainHeading}}</h2>
+        <div id="cleaning-services-list" class="text-left">
+            <div class="content">
+                <h3>{{services.cleaningServicesList.subHeading}}</h3>
+                <p [innerHTML]="services.cleaningServicesList.text | keepHtml"></p>
+            </div>
+            <!-- End of Content -->
+            <div class="content">
+                <ul>
+                    <li *ngFor="let item of services.cleaningServicesList.list.list1"><a target="_self">{{item.text}}</a><br></li>
+                </ul>
+            </div>
+            <!-- End of Content -->
+            <div class="content">
+                <ul class="moto-text_normal">
+                    <li *ngFor="let item of services.cleaningServicesList.list.list2"><a target="_self">{{item.text}}</a><br></li>
+                </ul>
+            </div>
+            <!-- End of Content -->
+        </div>
+    </div>
+</div>
+
+
+<div class="full-width">
+    <div class="container">
+        <h2 class="text-center">{{services.servicesOverview.mainHeading}}</h2>
+        <div id="services-overview" class="text-center">
+            <div class="content-container" *ngFor="let item of services.servicesOverview.features;">
+                <div class="content text-left"  >
+                    <div class="img-container">
+                        <img class="img-shadow" src="{{item.img.url}}" alt="Image">
+                    </div>
+
+                    <div class="inner-text">
+                        <h5>{{item.heading}}</h5>
+                        <p>{{item.text}}</p>
+                    </div>
+
+                </div>
+            </div>
+                <!-- End of Content -->
+        </div>
+    </div>
+</div>
+
+
+<div class="full-width">
+    <div class="container">
+
+        <div id="green-cleaning" class="text-left">
+            <div class="content-container">
+
+                <div class="content">
+                    <h2 class="text-left">{{services.greenCleaning.mainHeading}}</h2>
+                    <p>{{services.greenCleaning.text}}</p>
+
+                    <ul>
+                        <li *ngFor="let item of services.greenCleaning.list"><a target="_self">{{item.text}}</a><br></li>
+                    </ul>
+                </div>
+                <!-- End of Content -->
+            </div>
+            <!-- End of Content Cointainer -->
+
+            <div class="content-container primary-background-gradient">
+                <div class="content">
+                    <div class="form-title">
+                        <h4>Get a <br>
+                            <strong>
+                                <em>FREE</em><br>Cleaning</strong><br>
+                            <em>Quote Today!</em>
+                        </h4>
+                    </div>
+                    <app-contact-form></app-contact-form>
+                    <!-- End of Content -->
+                </div>
+                <!-- End of Content Cointainer -->
+            </div>
+        </div>
+    </div>
