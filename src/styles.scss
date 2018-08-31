@@ -1,61 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, apmlet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 dismlay-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+@import "./scss/_reset.scss";
+@import "./scss/_variables.scss";
+@import "./scss/_mixins.scss";
+@import "./scss/_base.scss";
+@import "./scss/_typography.scss";
 
 
-
-    .container {
-        margin: auto;
-    }
-br {  
-    white-space: pre-line 
-}
-
-body {
-    font-family: 'Lato', sans-serif;
-    overflow-x: hidden;
-    width: 100%;
-    font-size: 17px;
-    transition: padding-left;
-    padding-left: 0;
-    padding-right: 0;
-
-
-}
-
-.slide-in-body {
-    transition: padding-left 500ms;
-    padding-left: 100px;
-}
 
 
 
@@ -89,67 +38,7 @@ body {
 }
 
 
-.full-width {
-    padding: 10em .2em;
-}
 
-
-
-
-main {
-    padding-top: 95px;
-}
-/**** Typography ****/
-h1, h2, h3, h4, h5, h6 {
-    padding: 0.8em;
-}
-p {
-    font-size: 1em;
-    padding: .3em 0.8em;
-}
-h1 {
-    font-weight: 800;
-    font-size: 2em;
-}
-
-h2 {
-    font-weight: 800;
-    font-size: 1.5em;
-}
-
-
-h3 {
-    font-weight: 600;
-    font-size: 1.17em;
-}
-
-h4 {
-    font-weight: 600;
-    font-size: 1.12em;
-}
-
-h5 {
-    font-weight: 600;
-    font-size: .83em;
-}
-
-h6 {
-    font-weight: 600;
-    font-size: .75em;
-}
-
-ul {
-    padding-left: 3em;
-}
-/**** Grid System ****/
-
-.full-width {
-    width: 100%;
-}
-
-
-
-/**** Helpers ****/
 .ml-1 {
     padding-left: 10px;
 }

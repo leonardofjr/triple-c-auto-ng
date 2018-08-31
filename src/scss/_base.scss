@@ -1,0 +1,42 @@
+
+body {
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+    font-size: 17px;
+    transition: padding-left;
+    padding-left: 0;
+    padding-right: 0;
+
+
+}
+
+main {
+    padding-top: 95px;
+}
+
+
+ul {
+    padding-left: 3em;
+}
+
+br {  
+    white-space: pre-line 
+}
+
+.container {
+    margin: auto;
+}
+
+
+.full-width {
+    width: 100%;
+    padding: 10em .2em;
+}
+
+
+.slide-in-body {
+    transition: padding-left 500ms;
+    padding-left: 100px;
+}
+

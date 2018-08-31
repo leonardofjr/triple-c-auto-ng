@@ -3,7 +3,7 @@ declare var require:any;
 @Component({
   selector: 'app-service-areas',
   templateUrl: './service-areas.component.html',
-  styleUrls: ['./service-areas.component.css']
+  styleUrls: ['./service-areas.component.scss']
 })
 export class ServiceAreasComponent implements OnInit {
   assetsPath = './assets/';

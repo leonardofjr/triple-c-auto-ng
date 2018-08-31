@@ -8,15 +8,15 @@ import { ServicesComponent } from './frontend/pages/services/services.component'
 import { HomeComponent } from './frontend/pages/home/home.component';
 import { OurFeaturesComponent } from './frontend/pages/home/our-features/our-features.component';
 import { ContactComponent } from './frontend/pages/contact/contact.component';
-import { ContactFormComponent } from './components/contact-form/contact-form.component';
-import { SliderComponent } from './slider/slider.component';
+import { ContactFormComponent } from './frontend/components/contact-form/contact-form.component';
+import { SliderComponent } from './frontend/components/slider/slider.component';
 import { OurClientsComponent } from './frontend/pages/our-clients/our-clients.component';
 import { CleaningGuaranteeComponent } from './frontend/pages/about/cleaning-guarantee/cleaning-guarantee.component';
 import { ServiceAreasComponent } from './frontend/pages/service-areas/service-areas.component';
-import { PrimaryMenuComponent } from './components/menus/primary-menu/primary-menu.component';
-import { MobileMenuComponent } from './components/menus/mobile-menu/mobile-menu.component';
+import { PrimaryMenuComponent } from './frontend/components/menus/primary-menu/primary-menu.component';
+import { MobileMenuComponent } from './frontend/components/menus/mobile-menu/mobile-menu.component';
 import { KeepHtmlPipe } from './pipes/keep-html.pipe';
-import { FixedFreeQuoteFormComponent } from './components/fixed-free-quote-form/fixed-free-quote-form.component';
+import { FixedFreeQuoteFormComponent } from './frontend/components/fixed-free-quote-form/fixed-free-quote-form.component';
 
 @NgModule({
   declarations: [
