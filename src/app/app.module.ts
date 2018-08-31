@@ -16,6 +16,7 @@ import { ServiceAreasComponent } from './frontend/pages/service-areas/service-ar
 import { PrimaryMenuComponent } from './components/menus/primary-menu/primary-menu.component';
 import { MobileMenuComponent } from './components/menus/mobile-menu/mobile-menu.component';
 import { KeepHtmlPipe } from './pipes/keep-html.pipe';
+import { FixedFreeQuoteFormComponent } from './components/fixed-free-quote-form/fixed-free-quote-form.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { KeepHtmlPipe } from './pipes/keep-html.pipe';
     PrimaryMenuComponent,
     MobileMenuComponent,
     KeepHtmlPipe,
+    FixedFreeQuoteFormComponent,
   ],
   imports: [
     HttpClientModule,

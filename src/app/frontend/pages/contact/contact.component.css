@@ -1,25 +1,22 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    #commercial-cleaning {
-        display: flex;
-        flex-direction: column;
-    }
+
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    #green-cleaning {
+    #contact-us {
         display: flex;
         flex-direction: row;
     }
 
-    #green-cleaning .content-container {
+    #contact-us .content-container {
         padding: 2em 4em;
         flex-basis: 50%;
     }
 
 
-    #green-cleaning .content {
+    #contact-us .content {
         
     }
 
