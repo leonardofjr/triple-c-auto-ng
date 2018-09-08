@@ -7,21 +7,19 @@
     </div>
     <app-mobile-menu></app-mobile-menu>
 </header>
-<app-fixed-free-quote-form></app-fixed-free-quote-form>
+<!--<app-fixed-free-quote-form></app-fixed-free-quote-form>-->
 <main>
 <router-outlet>
 </router-outlet>
 </main>
 
-<footer class="text-center">
-  <div id="call-to-action">
-    <div class="container">
-      <div class="triangle"></div>
-      <span> Call (204) 594-4666 Today And Get Your
-        <u>Free</u> Personalized Cleaning Quote! </span>
-      <a class="nectar-button regular-button  accent-color" data-color-override="false" href="tel:(204) 594-4666" style="visibility: visible;">CALL NOW </a>
-    </div>
+<div class="full-width secondary-background-gradient text-center">
+  <div class="container">
+    <app-call-to-action></app-call-to-action>
   </div>
+</div>
+
+<footer class="text-center">
   <div>
     <small>ISA CLEAN Copyright &copy; {{year}}</small>
   </div>

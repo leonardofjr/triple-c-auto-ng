@@ -17,6 +17,7 @@ import { PrimaryMenuComponent } from './frontend/components/menus/primary-menu/p
 import { MobileMenuComponent } from './frontend/components/menus/mobile-menu/mobile-menu.component';
 import { KeepHtmlPipe } from './pipes/keep-html.pipe';
 import { FixedFreeQuoteFormComponent } from './frontend/components/fixed-free-quote-form/fixed-free-quote-form.component';
+import { CallToActionComponent } from './frontend/components/call-to-action/call-to-action.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { FixedFreeQuoteFormComponent } from './frontend/components/fixed-free-qu
     MobileMenuComponent,
     KeepHtmlPipe,
     FixedFreeQuoteFormComponent,
+    CallToActionComponent,
   ],
   imports: [
     HttpClientModule,

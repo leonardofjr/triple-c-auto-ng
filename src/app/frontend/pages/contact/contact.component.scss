@@ -1,3 +1,11 @@
+#contact-us {
+    display: flex;
+    flex-direction: row;
+    
+    .content-container {
+        flex-basis: 50%;
+    }   
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
@@ -5,20 +13,6 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    #contact-us {
-        display: flex;
-        flex-direction: row;
-    }
-
-    #contact-us .content-container {
-        padding: 2em 4em;
-        flex-basis: 50%;
-    }
-
-
-    #contact-us .content {
-        
-    }
 
 
 } 

@@ -1,17 +1,27 @@
-#contact-form .form-group {
-    margin: 1.3em .5em;
-}
-#contact-form .form-group input  {
-    width: 90%;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    padding: 15px;
-    font-size:1em;
-}
-#contact-form .form-group textarea  {
-    width: 90%;
-    font-size:1.1em;
-    padding: 15px;
-    height: 190px;
+#contact-form {
+    padding: 1em;
+    form {
+        .form-group {
+            margin: .8em 0;
+        }
+        
+        .form-group input  {
+            width: 100%;
+            padding: .4em .8em;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            font-size:1em;        
+            box-sizing: border-box;
+
+        }
+
+        .form-group textarea  {
+            width: 100%;
+            padding: .4em .8em;
+            height: 190px;
+            box-sizing: border-box; 
+
+        }
+    }
 }

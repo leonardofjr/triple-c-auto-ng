@@ -76,9 +76,11 @@
     },
 
     "servicesOverview": {
+        "mainHeading": "Services Overview",
         "features": [
             {
                 "heading": "Office Cleaning",
+                "url": "office-cleaning",
                 "text": "For those who value their time, and does not want to choose between cleaning.",
                 "img": {
                     "altText": "Image",
@@ -87,6 +89,7 @@
             },
             {
                 "heading": "Institutional Cleaning",
+                "url": "institutional-cleaning",
                 "text": "Whether working with schools, hospitals, or government buildings, ISA CLEAN is ready and able to uphold the highest standards of cleanliness for your institution.",
                 "img": {
                     "altText": "Image",
@@ -95,6 +98,7 @@
             },
             {
                 "heading": "Restauraunt Cleaning",
+                "url": "restauraunt-cleaning",
                 "text": "The specificity of the cleaning of warehouses requires special training for cleaners.",
                 "img": {
                     "altText": "Image",
@@ -103,6 +107,7 @@
             },
             {
                 "heading": "Stripping & Waxing",
+                "url": "stripping-waxing",
                 "text": "Тhe company has a sufficient number of highly qualified professionals.",
                 "img": {
                     "altText": "Image",
@@ -111,6 +116,7 @@
             },
             {
                 "heading": "Carpet Cleaning",
+                "url": "carpet-cleaning",
                 "text": "Cleaning the parking lot can be considered specific, because to maintain purity.",
                 "img": {
                     "altText": "Image",
@@ -119,6 +125,7 @@
             },
             {
                 "heading": "Post Construction Cleaning",
+                "url": "post-construction-cleaning",
                 "text": "As is well known, a sign of service and comfort of the public sports institution.",
                 "img": {
                     "altText": "Image",
