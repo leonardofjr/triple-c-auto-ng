@@ -71,24 +71,25 @@
         width: 100%;
     }
 
-    
-    #green-cleaning {
-        display: flex;
-        flex-direction: row;
-    }
-
-    #green-cleaning .content-container {
-        flex-basis: 50%;
-    }
-
-
-    #green-cleaning .content {
-        
-    }
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {} 
+@media only screen and (min-width: 768px) {
+        
+     #green-cleaning {
+        display: flex;
+        flex-direction: row;
+    .content-container {
+        flex-basis: 50%;
+    }
+        .img-container img {
+            position: absolute; 
+            left:0;
+             z-index: -100 ;
+        }
+    }
+
+} 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {

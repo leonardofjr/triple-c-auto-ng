@@ -11,5 +11,7 @@ export class ContactFormComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  resolved(captchaResponse: string) {
+    console.log(`Resolved captcha with response ${captchaResponse}:`);
+  }
 }

@@ -82,7 +82,7 @@
     box-shadow: 10px 10px 25px #888;
 }
 
-.primary-background-gradient {
+.primary-background {
     color: #fff!important;
 background: rgba(23,26,74,1);
 background: -moz-linear-gradient(top, rgba(23,26,74,1) 0%, rgba(30,34,92,1) 50%, rgba(23,26,74,1) 100%);
@@ -101,7 +101,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171a4a', end
 .secondary-color-text {
     color: #ffd45c;
 }
-.secondary-background-gradient {
+.secondary-background {
 color: #000;
 background: rgba(253,198,35,1);
 background: -moz-linear-gradient(top, rgba(253,198,35,1) 0%, rgba(252,216,119,1) 50%, rgba(253,198,35,1) 100%);

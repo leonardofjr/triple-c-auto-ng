@@ -18,7 +18,7 @@ import { MobileMenuComponent } from './frontend/components/menus/mobile-menu/mob
 import { KeepHtmlPipe } from './pipes/keep-html.pipe';
 import { FixedFreeQuoteFormComponent } from './frontend/components/fixed-free-quote-form/fixed-free-quote-form.component';
 import { CallToActionComponent } from './frontend/components/call-to-action/call-to-action.component';
-
+import { RecaptchaModule } from 'ng-recaptcha';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +41,8 @@ import { CallToActionComponent } from './frontend/components/call-to-action/call
   imports: [
     HttpClientModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RecaptchaModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
