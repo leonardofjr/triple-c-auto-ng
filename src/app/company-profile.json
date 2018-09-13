@@ -1,0 +1,11 @@
+{
+    "name": "ISA",
+    "phone": "(647)-455-2235",
+    "email": "info@isaclean.ca",
+    "address": {
+        "streetAddress": "188 Bur Oak Avenue",
+        "city": "Markham",
+        "province": "Ontario",
+        "postal": "L6C-2M1"
+    }
+}

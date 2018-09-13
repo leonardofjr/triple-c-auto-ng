@@ -1,19 +1,17 @@
 {
     "ourCoreValues": {
-        "mainHeading" : "Our Core Values",
-        "text" : "ISA is committed to providing the highest quality commercial cleaning service available by exceeding the expectations of our clients, as well as their employees, patients, students, and other visitors to their premises or facilities.",
             "values":  [
                 {
                     "heading" : "SAFETY AND SUSTAINABILITY",
-                    "text" : "Safeguarding the health and wellbeing of our clients, our staff, and the environments"
+                    "text" : "Many cleaning companies sacrifice their profit for your health. We believe as a company that provides cleaning services that it is our duty to keep your workplace environment as healthy and clean as possible. "
                  },
                 {
                     "heading" : "KNOWLEDGE",
-                    "text" : "Fostering a culture that encourages learning and personal development. Being experts in our field"
+                    "text" : "Your current cleaning company could be doing more harm to your facility without even knowning it. It requires knowledge to know what cleaning products to use for what given job."
                       },
                 {
                     "heading" : "COMMITMENT",
-                    "text" : "Calling on passion and persistence to deliver excellence in operations"
+                    "text" : "We are commited to never sacrifice your health for our profit. ISA is commited to keeping our employees and your facility as safe as possible."
                  }
             ]
     }

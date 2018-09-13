@@ -2,13 +2,14 @@
 
 <!-- Our Core Values -->
 <div class="full-width  primary-background">
-    <div class="container">
-        <h2 class="text-center">{{ourCoreValues.mainHeading}}</h2>
-        <p class="text-center mb-1">{{ourCoreValues.text}}</p>
+    <div class="container text-center">
+        <h2>WE WILL HELP YOU PROVIDE A HEALTHY CLEAN ENVIRONMENT</h2>
+        <p>ISA is committed to providing the highest quality commercial cleaning service available by exceeding the expectations of
+        our clients, as well as their employees, patients, students, and other visitors to their premises or facilities.</p>
 
-        <div id="our-core-values" class="text-center">
+        <div id="our-core-values">
             <div class="content" *ngFor="let item of ourCoreValues.values; index as i">
-                <h3>{{item.heading}}</h3>
+                <h4>{{item.heading}}</h4>
                 <p>{{item.text}}</p>
             </div><!-- End of Content Body -->
         </div>
