@@ -1,3 +1,4 @@
+
 <div id="slider">
   <div class="content-container">
     <img 
@@ -5,16 +6,34 @@
     ./assets/main-image-mobile.gif 320w, 
     ./assets/main-image-monitor.gif 7600w"  
 alt="">
-    <div class="content text-center">
-   
+    <div class="content text-center"  *ngIf="currentRoute == '/'">
       <h1>YOUR ONE STEP CLOSER TO A HEALTHIER COMMERCIAL CLEANING SERVICE</h1>
-      <p>For over a decade we've helped businesses in Toronto, Markham, Richmond Hill and Stouffville by keeping them safe from harsh deadly cleaning products that can cause health problems to your staff and people entering your facility.</p>
+      <p>For over a decade we've helped businesses in Toronto, Markham, Richmond Hill and Stouffville by keeping them safe from harsh deadly cleaning products that can cause health problems to your staff and your visitors.</p>
     </div>
-
+    <div class="content text-center"  *ngIf="currentRoute == '/about'">
+      <h1>About Us</h1>
+      <p>Our main mission is to provide a healthier environment for your facility and for our planet with our cleaning services that has gained a huge repuation in cities like Markham to the Toronto.</p>
+    </div>
+    <div class="content text-center"  *ngIf="currentRoute == '/services'">
+      <h1>Services</h1>
+      <p>Our main mission is to provide a healthier environment for your facility and for our planet with our cleaning services that has gained a huge repuation in cities like Markham to the Toronto.</p>
+    </div>
+    <div class="content text-center"  *ngIf="currentRoute == '/service-areas'">
+      <h1>Service Areas</h1>
+      <p>Our main mission is to provide a healthier environment for your facility and for our planet with our cleaning services that has gained a huge repuation in cities like Markham to the Toronto.</p>
+    </div>
+    <div class="content text-center"  *ngIf="currentRoute == '/our-clients'">
+      <h1>Clients</h1>
+      <p>Our main mission is to provide a healthier environment for your facility and for our planet with our cleaning services that has gained a huge repuation in cities like Markham to the Toronto.</p>
+    </div>
+    <div class="content text-center"  *ngIf="currentRoute == '/contact'">
+      <h1>Contact</h1>
+      <p>Our main mission is to provide a healthier environment for your facility and for our planet with our cleaning services that has gained a huge repuation in cities like Markham to the Toronto.</p>
+    </div>
   </div>
 </div>
 
-<div id="bottom" class="secondary-background">
+<div id="bottom" class="secondary-background" *ngIf="currentRoute == '/'">
   <div class="container">
     <div class="content-container">
       <div class="content">       <img src="./assets/isa-van-right.gif" alt="">
@@ -23,10 +42,10 @@ alt="">
     <div class="content-container">
       <div class="content">
         <h2>10% OFF OUR FLOOR REJUVENATION SERVICE</h2>
-        <p>Let ISA rejuvenate those dirty old looking floors so you can make a great first impression!</p>
+        <p>Get a free quote to rejuvenate those dirty old looking floors so you can make a great first impression!</p>
         <button class="btn-3">FREE QUOTE</button>
       </div>
     </div>
   </div>
-
 </div>
+
