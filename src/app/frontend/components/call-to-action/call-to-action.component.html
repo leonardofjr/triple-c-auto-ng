@@ -1,11 +1,28 @@
 
-<div class="full-width" id="call-to-action">
+<div id="call-to-action" class="full-width secondary-background">
+      <div class="text-center">
+         <h2 style="font-size: 1.4em;"><b>THERE ISN'T A JOB THAT WE HAVEN'T FACED!</b></h2>
+      </div>
   <div class="container">
+
     <div class="column-1">
       <div class="content-container">
-        <p style="font-size: 1.4em;"><b>SEVERAL PROGRAMS TO FIT YOUR BUDGET!</b></p>
-        <p>Get Your <u>Personalized Cleaning Quote!</u></p>
-        <button class="btn-3"><a href="tel:{{companyProfile.phone}}" style="visibility: visible;">CALL {{companyProfile.phone}} </a></button>
+           
+            <div id="cleaning-services-list">
+              <div class="content">
+                <ul>
+                  <li *ngFor="let item of services.cleaningServicesList.list.list1"><a target="_self">{{item.text}}</a><br></li>
+                </ul>
+              </div>
+              <!-- End of Content -->
+              <div class="content">
+                <ul class="moto-text_normal">
+                  <li *ngFor="let item of services.cleaningServicesList.list.list2"><a target="_self">{{item.text}}</a><br></li>
+                </ul>
+              </div>
+            
+            </div>
+
       </div>
     </div>
 
@@ -15,4 +32,9 @@
       </div>
     </div>
   </div>
+  <div class="text-center">
+              <p>Get Your <u>Personalized Cleaning Quote!</u></p>
+              <button class="btn-3"><a href="tel:{{companyProfile.phone}}" style="visibility: visible;">CALL {{companyProfile.phone}} </a></button>
+  </div>
+  
 </div>

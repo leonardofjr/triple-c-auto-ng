@@ -7,6 +7,7 @@ declare var require:any;
 })
 export class CallToActionComponent implements OnInit {
   companyProfile = require("src/app/company-profile.json");
+  services = require('./content.json');
 
   constructor() { }
 

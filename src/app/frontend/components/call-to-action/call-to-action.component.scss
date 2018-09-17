@@ -2,11 +2,11 @@
     padding: .5em 0;
 }
 #call-to-action {
-    a {
-        color: #fff;
-    }
-    font-size: 1.6em;
+    button a {
+    
+    color: #fff;
 
+    }
  
 
     .img-container {
@@ -14,11 +14,24 @@
     }
 
     img {
-        width: 100%;
+        width: 50%;
     }
 }
 
 
+#cleaning-services-list {
+
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+#cleaning-services-list .content:nth-child(1) {
+    flex-basis: 50%;
+}
+#cleaning-services-list .content:nth-child(2), #cleaning-services-list .content:nth-child(3) {
+    flex-basis: 25%;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {

@@ -2,7 +2,6 @@
 
 <div class="full-width ">
     <div class="container">
-        <h2 class="text-center">About Us</h2>
         <div id="about-us-introduction" class="text-center">
             <div class="content" *ngFor = "let item of aboutUs.aboutUsIntroduction.features;">
                 <h3>{{item.heading}}</h3>
@@ -12,23 +11,5 @@
         </div>
     </div>
 </div>
-
-
-<div class="full-width">
-    <div class="container">
-            <div class="content-container">
-                <h2 class="text-center">{{aboutUs.ourMission.mainHeading}}</h2>
-                <p class="text-center">{{aboutUs.ourMission.text}}
-                </p>
-            </div>
-
-            <div class="content-container">
-                <h2 class="text-center">{{aboutUs.ourVision.mainHeading}}</h2>
-                <p class="text-center">{{aboutUs.ourVision.text}}
-                </p>
-            </div>
-    </div>
-</div>
-
 
 <app-cleaning-guarantee></app-cleaning-guarantee>
