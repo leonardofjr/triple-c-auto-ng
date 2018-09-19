@@ -8,6 +8,8 @@ declare var require:any;
 })
 export class ServicesComponent implements OnInit {
   services = require('./content.json');
+  companyProfile = require("src/app/company-profile.json");
+
   constructor() { }
 
   ngOnInit() {

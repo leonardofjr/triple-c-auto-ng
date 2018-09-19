@@ -6,7 +6,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { AboutComponent } from './frontend/pages/about/about.component';
 import { ServicesComponent } from './frontend/pages/services/services.component';
 import { HomeComponent } from './frontend/pages/home/home.component';
-import { OurFeaturesComponent } from './frontend/pages/home/our-features/our-features.component';
+import { OurFeaturesComponent } from './frontend/components/our-features/our-features.component';
 import { ContactComponent } from './frontend/pages/contact/contact.component';
 import { ContactFormComponent } from './frontend/components/contact-form/contact-form.component';
 import { SliderComponent } from './frontend/components/slider/slider.component';
@@ -19,6 +19,7 @@ import { KeepHtmlPipe } from './pipes/keep-html.pipe';
 import { FixedFreeQuoteFormComponent } from './frontend/components/fixed-free-quote-form/fixed-free-quote-form.component';
 import { CallToActionComponent } from './frontend/components/call-to-action/call-to-action.component';
 import { RecaptchaModule } from 'ng-recaptcha';
+import { FloorRejuvenationDiscountComponent } from './frontend/components/floor-rejuvenation-discount/floor-rejuvenation-discount.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,6 +38,7 @@ import { RecaptchaModule } from 'ng-recaptcha';
     KeepHtmlPipe,
     FixedFreeQuoteFormComponent,
     CallToActionComponent,
+    FloorRejuvenationDiscountComponent,
   ],
   imports: [
     HttpClientModule,

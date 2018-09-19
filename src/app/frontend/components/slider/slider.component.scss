@@ -22,20 +22,3 @@
         }
     }
 }
-
-#bottom .container {
-
-    img {
-        width: 100%;
-    }
-
-    @include breakpoint(md) {
-        display: flex;
-        flex-direction: row;
-
-        .content-container {
-            flex-basis: 50%;
-        }
-
-    }
-}

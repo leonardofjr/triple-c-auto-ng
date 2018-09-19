@@ -1,26 +1,56 @@
 <app-slider></app-slider>
+<app-call-to-action></app-call-to-action>
+<app-our-features></app-our-features>
+
 <div class="full-width">
     <div class="container">
-        <h2 class="text-center">{{services.servicesOverview.mainHeading}}</h2>
-        <div id="services-overview" class="text-center">
-            <div class="content-container" *ngFor="let item of services.servicesOverview.features;">
-                <div class="content text-left">
-                    <div class="img-container">
-                        <img class="img-shadow" src="{{item.img.url}}" alt="Image">
-                    </div>
+        <div id="floor-rejuventation">
+            <div class="content">
+                <div class="img-container">
+                <img src="./assets/waxed-floor.jpg" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <h2>Floor Rejuvenation Service</h2>
+                <p>ISA prides itself on rejuvenating floors all over the the great toronto area. Our floor rejuvenation service has gained a huge popularity in cities like markham and richmond hill. There is no floor too dirty that we cannot tackle! </p>
+                <p>We all know how important first impressions are so why not impress your visitors by rejuvenating those old looking floors with our floor rejuvenation service.</p>
+        
+                <button class="btn-2 push-right"><a href="tel:{{companyProfile.phone}}" style="visibility: visible;">CALL {{companyProfile.phone}}
+                    </a></button>
+            </div>
+            <!-- End of Content -->
+        </div>
+    </div>
+</div>
+<div class="full-width">
+    <div class="container">
+        <div id="carpet-cleanse">
+            <div class="content">
+                <h2>Carpet Cleanse</h2>
+                <p>ISA prides itself on rejuvenating floors all over the the great toronto area. Our floor rejuvenation
+                    service has gained a huge popularity in cities like markham and richmond hill. There is no floor
+                    too dirty that we cannot tackle! </p>
+                <p>We all know how important first impressions are so why not impress your visitors by rejuvenating
+                    those old looking floors with our floor rejuvenation service.</p>
 
-                    <div class="inner-text">
-                        <h5>{{item.heading}}</h5>
-                        <p>{{item.text}}</p>
-                    </div>
-
+                <button class="btn-2 push-left"><a href="tel:{{companyProfile.phone}}" style="visibility: visible;">CALL
+                        {{companyProfile.phone}}
+                    </a></button>
+            </div>
+            <!-- End of Content -->
+            <div class="content">
+                <div class="img-container">
+                    <img src="./assets/waxed-floor.jpg" alt="">
                 </div>
             </div>
             <!-- End of Content -->
         </div>
     </div>
 </div>
-<app-call-to-action></app-call-to-action>
+
+
+
+
 
 
 <div class="full-width">

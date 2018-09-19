@@ -1,12 +1,11 @@
 <div id="slider">
-  
   <div *ngFor="let item of content.slides; index as i">
     <div class="content-container"  *ngIf="currentRoute == item.routeUrl">
       <img 
         srcset="
-        {{item.imgs.mobile}} 320w, 
-        {{item.imgs.monitor}} 7600w"  
-      alt={{item.imgs.altText}}>
+        {{item.imgs.mobile}} 640w, {{item.imgs.monitor}} 1366w" sizes="(min-width: 200px) and (max-width: 767px) 640w,(min-width: 768px) 1366w" 
+
+      alt={{item.imgs.altText}} src="{{item.imgs.monitor}}">
       <div class="content text-center">
         <h1>{{item.heading}} </h1>
         <p>{{item.text}}</p>
@@ -14,19 +13,3 @@
     </div>
   </div>
 </div>
-<div id="bottom" class="secondary-background" *ngIf="currentRoute == '/'">
-  <div class="container">
-    <div class="content-container">
-      <div class="content">       <img src="./assets/isa-van-right.gif" alt="">
-      </div>
-    </div>
-    <div class="content-container">
-      <div class="content">
-        <h2>10% OFF OUR FLOOR REJUVENATION SERVICE</h2>
-        <p>Get a free quote to rejuvenate those dirty old looking floors so you can make a great first impression!</p>
-        <button class="btn-3">FREE QUOTE</button>
-      </div>
-    </div>
-  </div>
-</div>
-
