@@ -1,9 +1,13 @@
+@import "src/scss/_mixins.scss";
+
 #floor-rejuventation {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    button a {
+        color: white;
+    }
 
     .content:nth-child(1) {
-        flex-basis: 30%;
         .img-container {
             width: 100%;
         }
@@ -12,21 +16,30 @@
         }
     }
 
-    .content:nth-child(2) {
-        flex-basis: 70%;
-    }
+    @include breakpoint(md) {
+        flex-direction: row;
 
- button a {
-     color: white;
- }
+
+        .content:nth-child(2) {
+            flex-basis: 30%;
+        }
+
+        .content:nth-child(1) {
+            flex-basis: 70%;
+        }
+    }
+    
 }
 
-#carpet-cleanse {
+#carpet-revival {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    button a {
+        color: white;
+    }
 
+    
     .content:nth-child(2) {
-        flex-basis: 30%;
         .img-container {
             width: 100%;
         }
@@ -35,13 +48,47 @@
         }
     }
 
-    .content:nth-child(1) {
-        flex-basis: 70%;
+    @include breakpoint(md) {
+        flex-direction: row;
+
+
+        .content:nth-child(2) {
+            flex-basis: 30%;
+        }
+
+        .content:nth-child(1) {
+            flex-basis: 70%;
+        }
+    }
+    
+}
+
+
+#green-cleaning {
+    display: flex;
+    flex-direction: column;
+    
+    img {
+        width: 100%;
+    }
+    .img-container {
+        width: 100%;
+    }
+    @include breakpoint(md) {
+        flex-direction: row;
+
+        .content-container {
+            flex-basis: 50%;
+        }
+
+        .img-container img {
+            position: absolute; 
+            width: 20%;
+            left:0;
+             z-index: -100 ;
+        }
     }
 
- button a {
-     color: white;
- }
 }
 
 #cleaning-services-list ul a {
@@ -54,6 +101,9 @@
 .push-right {
     float: left;
 }
+
+
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     #cleaning-services-list {
@@ -127,18 +177,7 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
         
-     #green-cleaning {
-        display: flex;
-        flex-direction: row;
-    .content-container {
-        flex-basis: 50%;
-    }
-        .img-container img {
-            position: absolute; 
-            left:0;
-             z-index: -100 ;
-        }
-    }
+  
 
 } 
 

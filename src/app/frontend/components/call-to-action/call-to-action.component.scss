@@ -20,17 +20,21 @@
 
 
 #cleaning-services-list {
-
     display: flex;
     flex-direction: row;
     text-align: left;
+
+    ul {
+        list-style-type: none;
+
+    }
 }
 
 #cleaning-services-list .content:nth-child(1) {
     flex-basis: 50%;
 }
 #cleaning-services-list .content:nth-child(2), #cleaning-services-list .content:nth-child(3) {
-    flex-basis: 25%;
+    flex-basis: 50%;
 }
 
 /* Extra small devices (phones, 600px and down) */
