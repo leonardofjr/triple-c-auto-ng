@@ -1,4 +1,33 @@
 {
+    "services": [
+        {
+            "service": "Janitorial Services",
+            "description" : "lorem",
+            "img" : {
+              "imgSrc": "#",
+              "altText": "asd"
+            },
+            "url": "janitorial-services"
+        },
+        {
+            "service": "Floor Maintenance",
+            "description" : "lorem",
+            "img" : {
+              "imgSrc": "#",
+              "altText": "asd"
+            },
+            "url": "floor-maintenance"
+        },
+        {
+            "service": "Green Cleaning",
+            "description" : "lorem",
+            "img" : {
+              "imgSrc": "#",
+              "altText": "asd"
+            },
+            "url": "green-cleaning-services"
+        }
+    ],
     "cleaningServicesList": {
         "mainHeading": "Cleaning Services List",
         "subHeading": "YOU URGENTLY REQUIRE THE SERVICES",

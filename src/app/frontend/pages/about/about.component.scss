@@ -1,51 +1,7 @@
-#what-we-do  .content-header {
-    display: flex;
-    flex-direction: row;
+img {
+    width: 100%;
 }
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    #about-us-introduction, #whatWeDo {
-        display: flex;
-        flex-direction: column;
-    }
 
-    #about-us-introduction .content {
-        padding: 25px;
-    }
-} 
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    #about-us-introduction {
-        display: flex;
-        flex-direction: row;
-    }
-     #about-us-introduction .content {
-        flex-basis: 50%;
-        padding: 25px;
-    }
- 
-    #what-we-do {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    #what-we-do .content {
-        flex: 0 0 33.33%;
-        box-sizing: border-box;
-    }
-} 
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {} 
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-} 
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
+.img-container {
+    width: 100%;
 }

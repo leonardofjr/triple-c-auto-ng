@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 declare var require:any;
 
 @Component({
@@ -7,12 +8,13 @@ declare var require:any;
   styleUrls: ['./services.component.scss']
 })
 export class ServicesComponent implements OnInit {
-  services = require('./content.json');
+  content = require('./content.json');
   companyProfile = require("src/app/company-profile.json");
-
-  constructor() { }
+  currentRoute;
+  constructor(private router: Router) { }
 
   ngOnInit() {
+    this.currentRoute = this.router.url; 
   }
 
 }

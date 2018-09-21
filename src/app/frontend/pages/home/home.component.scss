@@ -1,18 +1,6 @@
 @import "src/scss/_mixins.scss";
 
-#why-choose-us  .content-header {
-    display: flex;
-    flex-direction: row;
-}
 
-  .full-width:nth-child(6) {
-        .img-container {
-            width: 100%;
-        }
-        img {
-            width: 100%;
-        }
-  }
 
 @include breakpoint(md) {
 
@@ -36,7 +24,7 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    #our-core-values,  #why-choose-us {
+    #our-core-values {
         display: flex;
         flex-direction: column;
 
@@ -45,29 +33,15 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    #our-core-values, #why-choose-us  {
+    #our-core-values  {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
 
-    #our-core-values .content, #why-choose-us .content {
+    #our-core-values .content {
        flex: 0 0 33.33%;
         box-sizing: border-box;
     }
 
 } 
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {} 
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-} 
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-}
-

@@ -1,34 +1,10 @@
 <app-slider></app-slider>
 <app-floor-rejuvenation-discount></app-floor-rejuvenation-discount>
-
-<!-- Our Core Values -->
-<div class="full-width  primary-background">
-    <div class="container text-center">
-        <h2>WE WILL HELP YOU PROVIDE A HEALTHY CLEAN ENVIRONMENT</h2>
-        <p>ISA is committed to providing the highest quality commercial cleaning service available by exceeding the expectations of
-        our clients, as well as their employees, patients, students, and other visitors to their premises or facilities.</p>
-
-        <div id="our-core-values">
-            <div class="content" *ngFor="let item of ourCoreValues.values; index as i">
-                <h4>{{item.heading}}</h4>
-                <p>{{item.text}}</p>
-            </div><!-- End of Content Body -->
-        </div>
-    </div>
-</div>
-
-<!-- Our Features -->
-<app-our-features></app-our-features>
-
-
-<!-- Why Choose Us -->
 <div class="full-width  primary-background">
     <div class="container">
-        <h2 class="text-center">NOT ONLY DO WE PROVIDE HEALTHIER WORKPLACE ENVIRONMENTS<br/><span style="font-size: 1.3em">WE DO IT STRESS FREE!</span></h2>
-        <p class="text-center mb-1">A peace of mind is what we promise</p>
-
-        <div id="why-choose-us" class="text-center">
-                <div class="content text-left" *ngFor="let item of whyChooseUs.features; index as i">
+        <div class="row">
+            <div class="col-12 col-md-4 my-5 text-center" *ngFor="let item of content.whyChooseUs.features">
+                <div class="content text-left">
                     <div class="content-header">
                         <img src="{{item.icon.url}}" alt="{{item.icon.altText}}" class="text-center">
                         <h5 class="text-center">{{item.heading}}</h5>
@@ -39,20 +15,43 @@
                     </div>
                     <!-- End of Content Body -->
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Our Features -->
+<app-our-features></app-our-features>
+
+<!-- Our Core Values -->
+<div class="full-width  primary-background">
+    <div class="container text-center">
+        <h2>WE WILL HELP YOU PROVIDE A HEALTHY CLEAN ENVIRONMENT</h2>
+        <p>ISA is committed to providing the highest quality commercial cleaning service available by exceeding the
+            expectations of
+            our clients, as well as their employees, patients, students, and other visitors to their premises or
+            facilities.</p>
+
+        <div id="our-core-values">
+            <div class="content" *ngFor="let item of ourCoreValues.values; index as i">
+                <h4>{{item.heading}}</h4>
+                <p>{{item.text}}</p>
+            </div><!-- End of Content Body -->
         </div>
     </div>
 </div>
 
-<div class="full-width">
-    <div class="container">
-        <div class="content-container primary-background">
-                <app-contact-form></app-contact-form>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-3">
+            <app-contact-form></app-contact-form>
         </div>
-        <div class="content-container">
-            <div class="img-container">
-                <img src="./assets/cleaning-car.png" alt="cleaning van">
+        <div class="col-12 col-md-9">
+            <div class="img-container" style="width: 100%;">
+                <img style="width:100%;" src="./assets/cleaning-car.png" alt="cleaning van">
             </div>
         </div>
     </div>
-        <!-- End of Content Cointainer -->
 </div>
+
+

@@ -1,11 +1,13 @@
 <div id="slider">
   <div *ngFor="let item of content.slides; index as i">
     <div class="content-container"  *ngIf="currentRoute == item.routeUrl">
-      <img 
-        srcset="
-        {{item.imgs.mobile}} 640w, {{item.imgs.monitor}} 1366w" sizes="(min-width: 200px) and (max-width: 767px) 640w,(min-width: 768px) 1366w" 
+      <picture>
+          <source srcset="{{item.imgs.monitor}}" media="(min-width: 700px)">
+          <source srcset="{{item.imgs.mobile}}" media="(max-width: 639px) and (orientation: portrait)">
+          <source srcset="{{item.imgs.monitor}}" media="(min-width: 640px) and (orientation: landscape)">
 
-      alt={{item.imgs.altText}} src="{{item.imgs.monitor}}">
+          <img alt={{item.imgs.altText}} src="{{item.imgs.monitor}}">
+      </picture>
       <div class="content text-center">
         <h1>{{item.heading}} </h1>
         <p>{{item.text}}</p>

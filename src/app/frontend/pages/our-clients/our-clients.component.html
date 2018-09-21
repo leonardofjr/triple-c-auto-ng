@@ -1,12 +1,10 @@
-<app-slider></app-slider>
-
-
-<div class="full-width">
-  <div class="container">
-    <div id="our-client-logos" class="text-center">
-       <div class="content">
-        <div class="img-container"  *ngFor="let item of content.ourClients.clients; index as i">
-          <img src="{{assetsPath + item.img}}" alt="{{item.altText}}" class="text-center">
+<div class="container">
+  <h1 class="text-center">OUR CLIENTS</h1>
+  <div id="our-client-logos" class="text-center">
+    <div class="row">
+      <div class="col-12 col-md-3" *ngFor="let item of content.ourClients.clients; index as i">
+        <div class="img-container" style="width: 100%;">
+          <img  style="width: 100%;"src="{{assetsPath + item.img}}" alt="{{item.altText}}" class="text-center">
         </div>
       </div>
     </div>

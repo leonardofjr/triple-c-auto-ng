@@ -1,84 +1,20 @@
-<app-slider></app-slider>
-<app-call-to-action></app-call-to-action>
-<app-our-features></app-our-features>
-
-<div class="full-width">
-    <div class="container">
-        <div id="floor-rejuventation">
-            <div class="content">
-                <div class="img-container">
-                <img src="./assets/waxed-floor.jpg" alt="">
-                </div>
-            </div>
-            <div class="content">
-                <h2>Floor Rejuvenation Service</h2>
-                <p>ISA prides itself on rejuvenating floors all over the the great toronto area. Our floor rejuvenation service has gained a huge popularity in cities like markham and richmond hill. There is no floor too dirty that we cannot tackle! </p>
-                <p>We all know how important first impressions are so why not impress your visitors by rejuvenating those old looking floors with our floor rejuvenation service.</p>
+  <div id="services" class="container">
+    <h1 class="text-center">SERVICES</h1>
+    <div class="row">
+      <div class="col-md-3" >
+        <div *ngFor="let item of content.services">
+          <h2>{{item.service}}</h2>
+          <p>{{item.description}}</p>
+          <div class="img-container">
+            <img src="{{item.img.imgSrc}}" alt="{{item.img.altText}}">
+          </div>
+          <a routerLink="{{item.url}}">Read More</a>
+        </div>
+      </div>
+     
+      <div class="col-md-9">
         
-                <button class="btn-2 push-right"><a href="tel:{{companyProfile.phone}}" style="visibility: visible;">CALL {{companyProfile.phone}}
-                    </a></button>
-            </div>
-            <!-- End of Content -->
-        </div>
+        <router-outlet></router-outlet>
+      </div>
     </div>
-</div>
-<div class="full-width">
-    <div class="container">
-        <div id="carpet-revival">
-            <div class="content">
-                <h2>Carpet Revival</h2>
-                <p>ISA prides itself on rejuvenating floors all over the the great toronto area. Our floor rejuvenation
-                    service has gained a huge popularity in cities like markham and richmond hill. There is no floor
-                    too dirty that we cannot tackle! </p>
-                <p>We all know how important first impressions are so why not impress your visitors by rejuvenating
-                    those old looking floors with our floor rejuvenation service.</p>
-
-                <button class="btn-2 push-left"><a href="tel:{{companyProfile.phone}}" style="visibility: visible;">CALL
-                        {{companyProfile.phone}}
-                    </a></button>
-            </div>
-            <!-- End of Content -->
-            <div class="content">
-                <div class="img-container">
-                    <img src="http://cleaninggloucester.co.uk/images/CARPET%20CLEANING.jpg" alt="">
-                </div>
-            </div>
-            <!-- End of Content -->
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-<div class="full-width">
-    <div class="container">
-
-        <div id="green-cleaning" class="text-left">
-            <div class="content-container">
-
-                <div class="content">
-                    <h2 class="text-left green-text" >Green Cleaning Is Healthy Cleaning</h2>
-
-                    <p> A green workplace has been found to be safer for employees and visitors alike. Also, in many instances, green cleaning processes
-                    are better for your facility.</p>
-                    <p> For instance, regular cleaning agents tend to be caustic, wearing out surfaces over time and diminishing the longevity of your facility and your furnishings. Additionally, some cleaners can agitate those with sensitivities to chemicals. That’s
-                    why ISA's Green program focuses on reducing particulates, harmful emissions, and exposure to caustic agents with:</p>
-                    <div class="img-container">
-                            <img src="./assets/green-cleaning-services.gif" alt="">
-                    </div>
-                
-                </div>
-                <!-- End of Content -->
-            </div>
-            <!-- End of Content Cointainer -->
-
-            <div class="content-container primary-background">
-                    <app-contact-form></app-contact-form>
-                </div>
-                <!-- End of Content Cointainer -->
-            </div>
-        </div>
-    </div>
+  </div>

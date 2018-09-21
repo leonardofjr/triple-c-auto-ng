@@ -8,7 +8,7 @@ declare var require:any;
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-  aboutUs = require('./content.json');
+  content = require('./content.json');
   constructor() { }
 
   ngOnInit() {

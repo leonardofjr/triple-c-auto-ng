@@ -1,4 +1,9 @@
-<div  id="contact-form"  class="primary-background">
+<div  id="contact-form"  class="primary-background my-5">
+<script type="text/javascript">
+    var RecaptchaOptions = {
+        theme: 'clean'
+    };
+</script>
 
     <form action="" method="POST">
         <div class="content">
@@ -25,7 +30,7 @@
         <div class="form-group">
             <textarea type="text" name="interest" placeholder="Your Interested In?*"></textarea>
         </div>
-        <re-captcha class="re-captcha"  (resolved)="resolved($event)" siteKey="6LcjkG8UAAAAAA_s6dDAQIdM5UmjSyRgjPqnQ2Tn"></re-captcha>
+        <re-captcha class="re-captcha"  (resolved)="resolved($event)" data-size="compact" siteKey="6LcjkG8UAAAAAA_s6dDAQIdM5UmjSyRgjPqnQ2Tn"></re-captcha>
         <div class="form-group text-left">
             <button class="btn-1">SEND</button>
         </div>

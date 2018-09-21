@@ -3,16 +3,10 @@
 #cleaning-guarantee {
     display: flex;
     flex-direction: column;
+    .img-container {
+        width: 100%;
+    }
     .img-container img {
          width: 100%;
-    }
-
-    @include breakpoint(md) {
-        flex-direction: row;
-
-        .content-container {
-            flex-basis: 50%;
-        }
-
     }
 }
