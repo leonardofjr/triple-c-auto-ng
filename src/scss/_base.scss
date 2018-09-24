@@ -25,7 +25,25 @@ br {
     margin: auto;
 }
 
+.menu-bg {
+    background-color: #17194a;
+    color: white;
+    padding: 10px;
+    margin: 3px 0;
+    width: 100%;
+    display: block;
+}
+.bg-white {
+    background-color: white;
+}
+.thick-border-bottom {
+    border-bottom: 15px solid #17194a;;
+}
 
+.menu-bg:hover {
+    color: white;
+    background: rgba(253,198,35,1);
+}
 .full-width {
     width: 100%;
     padding: 10em 0;
@@ -39,12 +57,6 @@ br {
 .slide-in-body {
     transition: padding-left 500ms;
     padding-left: 100px;
-}
-
-footer {
-    color: #fff;
-    background: #000;
-    padding: .7em 0;
 }
 
 
