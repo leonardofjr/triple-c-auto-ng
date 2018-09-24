@@ -9,6 +9,7 @@ import { OurClientsComponent } from './frontend/pages/our-clients/our-clients.co
 import { ContactComponent } from './frontend/pages/contact/contact.component';
 import { FloorMaintenanceComponent } from './frontend/pages/services/subpages/floor-maintenance/floor-maintenance.component';
 import { GreenCleaningServicesComponent } from './frontend/pages/services/subpages/green-cleaning-services/green-cleaning-services.component';
+import { OurDifferenceComponent } from './frontend/pages/our-difference/our-difference.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },
@@ -21,7 +22,7 @@ const routes: Routes = [
       { path: "floor-maintenance", component: FloorMaintenanceComponent}
     ] 
   },
-  { path: 'service-areas', component: ServiceAreasComponent },
+  { path: 'our-difference', component: OurDifferenceComponent },
   { path: 'our-clients', component: OurClientsComponent },
   { path: 'contact', component: ContactComponent }
 ];

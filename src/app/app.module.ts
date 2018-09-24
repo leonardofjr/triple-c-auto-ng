@@ -23,6 +23,7 @@ import { FloorRejuvenationDiscountComponent } from './frontend/components/floor-
 import { JanitorialServicesComponent } from './frontend/pages/services/subpages/janitorial-services/janitorial-services.component';
 import { FloorMaintenanceComponent } from './frontend/pages/services/subpages/floor-maintenance/floor-maintenance.component';
 import { GreenCleaningServicesComponent } from './frontend/pages/services/subpages/green-cleaning-services/green-cleaning-services.component';
+import { OurDifferenceComponent } from './frontend/pages/our-difference/our-difference.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,6 +46,7 @@ import { GreenCleaningServicesComponent } from './frontend/pages/services/subpag
     JanitorialServicesComponent,
     FloorMaintenanceComponent,
     GreenCleaningServicesComponent,
+    OurDifferenceComponent,
   ],
   imports: [
     HttpClientModule,

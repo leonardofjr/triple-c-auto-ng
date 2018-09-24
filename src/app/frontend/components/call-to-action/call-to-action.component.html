@@ -3,38 +3,29 @@
       <div class="text-center">
          <h2 style="font-size: 1.4em;"><b>THERE ISN'T A JOB THAT WE HAVEN'T FACED!</b></h2>
       </div>
-  <div class="container">
-
-    <div class="column-1">
-      <div class="content-container">
-           
-            <div id="cleaning-services-list">
-              <div class="content">
-                <ul>
-                  <li *ngFor="let item of services.cleaningServicesList.list.list1"><span class="char-checkmark">✔</span><a target="_self">{{item.text}}</a><br></li>
-                </ul>
-              </div>
-              <!-- End of Content -->
-              <div class="content">
-                <ul class="moto-text_normal">
-                  <li *ngFor="let item of services.cleaningServicesList.list.list2"><span class="char-checkmark">✔</span><a target="_self">{{item.text}}</a><br></li>
-                </ul>
-              </div>
-            
-            </div>
-
-      </div>
+  <div class="row">
+    <div class="col-md-4">
+        <ul>
+          <li *ngFor="let item of services.cleaningServicesList.list.list1"><span class="char-checkmark">✔</span><a target="_self">{{item.text}}</a><br></li>
+        </ul>
     </div>
 
-    <div class="column-2">
+    <div class="col-md-4">
+      <ul class="moto-text_normal">
+        <li *ngFor="let item of services.cleaningServicesList.list.list2"><span class="char-checkmark">✔</span><a target="_self">{{item.text}}</a><br></li>
+      </ul>
+    </div>
+
+    <div class="col-md-4">
       <div class="img-container text-center">
         <img src="./assets/cleaner.gif" alt="cleaning-woman">
       </div>
     </div>
   </div>
+
   <div class="text-center">
-              <p>Get Your <u>Personalized Cleaning Quote!</u></p>
-              <button class="btn-3"><a href="tel:{{companyProfile.phone}}" style="visibility: visible;">CALL {{companyProfile.phone}} </a></button>
+        <p>Get Your <u>Personalized Cleaning Quote!</u></p>
+        <button class="btn-3"><a href="tel:{{companyProfile.phone}}" style="visibility: visible;">CALL {{companyProfile.phone}} </a></button>
   </div>
   
 </div>
