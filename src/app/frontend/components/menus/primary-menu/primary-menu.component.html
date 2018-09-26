@@ -13,9 +13,19 @@
       <li class="nav-item">
         <a class="nav-link" routerLink="/about">About</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/services">Services</a>
-      </li>
+
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+            Services
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" routerLink="services/janitorial-services">Janitorial Services</a>
+            <a class="dropdown-item" routerLink="services/floor-maintenance">Floor Maintenance</a>
+            <a class="dropdown-item" routerLink="services/green-cleaning-services">Green Cleaning</a>
+          </div>
+        </li>
+
       <li class="nav-item">
         <a class="nav-link" routerLink="/our-difference">Our Difference</a>
       </li>

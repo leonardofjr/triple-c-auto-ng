@@ -14,7 +14,6 @@ import { OurClientsComponent } from './frontend/pages/our-clients/our-clients.co
 import { CleaningGuaranteeComponent } from './frontend/components/cleaning-guarantee/cleaning-guarantee.component';
 import { ServiceAreasComponent } from './frontend/pages/service-areas/service-areas.component';
 import { PrimaryMenuComponent } from './frontend/components/menus/primary-menu/primary-menu.component';
-import { MobileMenuComponent } from './frontend/components/menus/mobile-menu/mobile-menu.component';
 import { KeepHtmlPipe } from './pipes/keep-html.pipe';
 import { FixedFreeQuoteFormComponent } from './frontend/components/fixed-free-quote-form/fixed-free-quote-form.component';
 import { CallToActionComponent } from './frontend/components/call-to-action/call-to-action.component';
@@ -38,7 +37,6 @@ import { OurDifferenceComponent } from './frontend/pages/our-difference/our-diff
     CleaningGuaranteeComponent,
     ServiceAreasComponent,
     PrimaryMenuComponent,
-    MobileMenuComponent,
     KeepHtmlPipe,
     FixedFreeQuoteFormComponent,
     CallToActionComponent,

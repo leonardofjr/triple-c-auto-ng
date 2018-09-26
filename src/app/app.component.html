@@ -2,18 +2,18 @@
           <app-primary-menu></app-primary-menu>
 </header>
 <!--<app-fixed-free-quote-form></app-fixed-free-quote-form>-->
-<main>
+<main class="mb-5">
 <router-outlet>
 </router-outlet>
 </main>
 
 
-<footer class="primary-background py-3">
+<footer class="primary-background mt-5 py-3">
   <div class="container">
     <div class="row">
         <div class="col-12 col-md-8">
           <h2>WE STRIVE TO PROVIDE YOU WITH A HEALTHY CLEAN ENVIRONMENT</h2>
-           <ul>
+           <ul class="nav flex-column">
               <li class="nav-item active">
                 <a class="nav-link" routerLink="">Home<span class="sr-only">(current)</span></a>
               </li>
@@ -21,10 +21,16 @@
                 <a class="nav-link" routerLink="/about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" routerLink="/services">Services</a>
+                <a class="nav-link" >Services</a>
+                <ul class="nav flex-column pl-2">
+                  <li><a class="nav-link" routerLink="services/janitorial-services">Janitorial Services</a>
+                  <li><a class="nav-link" routerLink="services/floor-maintenance">Floor Maintenance</a>
+                  <li><a class="nav-link" routerLink="services/green-cleaning-services">Green Cleaning</a>
+</li>
+                </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" routerLink="/service-areas">Service Areas</a>
+                <a class="nav-link" routerLink="/our-difference">Our Difference</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" routerLink="/our-clients">Our Clients</a>

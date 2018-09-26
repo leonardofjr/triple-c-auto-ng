@@ -1,29 +1,13 @@
 
-<div id="call-to-action" class="full-width">
-      <div class="text-center">
-         <h2 style="font-size: 1.4em;"><b>THERE ISN'T A JOB THAT WE HAVEN'T FACED!</b></h2>
-      </div>
-  <div class="row">
-    <div class="col-md-4">
+  <div class="row mt-4">
+    <div class="col-md-9" style="column-count: 2">
         <ul>
-          <li *ngFor="let item of services.cleaningServicesList.list.list1"><span class="char-checkmark">✔</span><a target="_self">{{item.text}}</a><br></li>
+          <li *ngFor="let item of services.cleaningServicesList.list.list1"><span class="char-checkmark">✔</span><a class="pl-3" target="_self">{{item.text}}</a><br></li>
         </ul>
     </div>
 
-    <div class="col-md-4">
-      <ul class="moto-text_normal">
-        <li *ngFor="let item of services.cleaningServicesList.list.list2"><span class="char-checkmark">✔</span><a target="_self">{{item.text}}</a><br></li>
-      </ul>
-    </div>
 
-    <div class="col-md-4">
-        <img class="img-fluid" src="./assets/cleaner.gif" alt="cleaning-woman">
+    <div class="col-12 col-md-3">
+        <img class="img-fluid p-1" src="./assets/cleaner.gif" alt="cleaning-woman">
     </div>
   </div>
-
-  <div class="text-center">
-        <p>Get Your <u>Personalized Cleaning Quote!</u></p>
-        <button class="btn-3"><a class="link-style" href="tel:{{companyProfile.phone}}" style="visibility: visible;">CALL {{companyProfile.phone}} </a></button>
-  </div>
-  
-</div>

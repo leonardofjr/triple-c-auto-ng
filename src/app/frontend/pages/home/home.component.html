@@ -6,7 +6,7 @@
             <div class="col-12 col-md-4 my-5 text-center" *ngFor="let item of content.whyChooseUs.features">
                 <div class="content text-left">
                     <div class="content-header">
-                        <img src="{{item.icon.url}}" alt="{{item.icon.altText}}" class="text-center">
+                        <!--<img src="{{item.icon.url}}" alt="{{item.icon.altText}}" class="text-center">-->
                         <h5 class="text-center">{{item.heading}}</h5>
                     </div>
                     <!-- End of Content Header -->
@@ -23,16 +23,16 @@
 <app-our-features></app-our-features>
 
 <!-- Our Core Values -->
-<div class="full-width  primary-background">
-    <div class="container text-center">
+<div class="image-background-1">
+    <div class="container text-center ">
         <h2>WE WILL HELP YOU PROVIDE A HEALTHY CLEAN ENVIRONMENT</h2>
-        <p>ISA is committed to providing the highest quality commercial cleaning service available by exceeding the
+        <p class="pb-5 pt-2">ISA is committed to providing the highest quality commercial cleaning service available by exceeding the
             expectations of
             our clients, as well as their employees, patients, students, and other visitors to their premises or
             facilities.</p>
 
-        <div id="our-core-values">
-            <div class="content" *ngFor="let item of ourCoreValues.values; index as i">
+        <div class="row">
+            <div class="col-12 col-md-4" *ngFor="let item of ourCoreValues.values; index as i">
                 <h4>{{item.heading}}</h4>
                 <p>{{item.text}}</p>
             </div><!-- End of Content Body -->
@@ -48,7 +48,7 @@
         </div>
         <div class="col-12 col-md-9">
             <div class="img-container" style="width: 100%;">
-                <img style="width:100%;" src="./assets/cleaning-car.png" alt="cleaning van">
+                <img style="width:100%;" src="./assets/isa-van-45.png" alt="cleaning van">
             </div>
         </div>
     </div>
