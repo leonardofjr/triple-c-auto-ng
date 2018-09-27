@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './/app-routing.module';
@@ -23,6 +24,7 @@ import { JanitorialServicesComponent } from './frontend/pages/services/subpages/
 import { FloorMaintenanceComponent } from './frontend/pages/services/subpages/floor-maintenance/floor-maintenance.component';
 import { GreenCleaningServicesComponent } from './frontend/pages/services/subpages/green-cleaning-services/green-cleaning-services.component';
 import { OurDifferenceComponent } from './frontend/pages/our-difference/our-difference.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,6 +52,7 @@ import { OurDifferenceComponent } from './frontend/pages/our-difference/our-diff
     HttpClientModule,
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     RecaptchaModule.forRoot()
   ],
   providers: [],

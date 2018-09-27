@@ -5,7 +5,7 @@
     };
 </script>
 
-    <form action="" method="POST">
+    <form method="GET">
         <div class="content">
             <div class="form-title">
                 <span style="display: block; padding-bottom: 7px;">Get a</span>
@@ -19,20 +19,57 @@
         </div>
 
         <div class="form-group">
-            <input type="text" name="name" placeholder="Your Name*">
+            <input ngModel required minlength="3" maxlength="25" #name="ngModel" type="text" name="name" placeholder="Your Name*">
+            <div class="alert alert-danger" *ngIf="name.touched && !name.valid">
+                <div *ngIf="name.errors.required">
+                    Name is required.
+                </div>
+                <div *ngIf="name.errors.minlength">
+                    Name must be longer than {{name.errors.minlength.requiredLength}} characters.
+                </div>
+                <div *ngIf="name.errors.maxlength">
+                    Name must not exceed than {{name.errors.maxlength.requiredLength}} characters.
+                </div>
+            </div>
         </div>
         <div class="form-group">
-            <input type="text" name="email" type="email" placeholder="Your Email*">
+            <input ngModel required pattern="email"  #email="ngModel" name="email" type="email" placeholder="Your Email*">
+            <div class="alert alert-danger" *ngIf="email.touched && !email.valid">
+                <div *ngIf="email.errors.required">
+                    Email is required.
+                </div>
+                <div *ngIf="email.errors.pattern">
+                    Please enter a valid email.
+                </div>
+            </div>
         </div>
         <div class="form-group">
-            <input type="text" name="phone" type="tel" placeholder="Your Phone">
+            <input ngModel required pattern="phone" #phone="ngModel" name="phone" type="tel" placeholder="Your Phone">
+            <div class="alert alert-danger" *ngIf="phone.touched && !phone.valid">
+                <div *ngIf="phone.errors.required">
+                    Phone is required.
+                </div>
+                <div *ngIf="phone.errors.pattern">
+                    Please enter a vallid phone number.
+                </div>
+            </div>
         </div>
         <div class="form-group">
-            <textarea type="text" name="interest" placeholder="Your Interested In?*"></textarea>
+            <textarea ngModel  type="text" minlength="10" #interest="ngModel" name="interest" placeholder="Your Interested In?*"></textarea>
+            <div class="alert alert-danger" *ngIf="interest.touched && !interest.valid">
+                <div *ngIf="interest.errors.required">
+                    What are you inquiring about?
+                </div>
+                
+                <div *ngIf="interest.errors.minlength">
+                    This message must be longer than {{interest.errors.minlength.requiredLength}} characters.
+                </div>
+
+            </div>
         </div>
         <re-captcha class="re-captcha"  (resolved)="resolved($event)" data-size="compact" siteKey="6LcjkG8UAAAAAA_s6dDAQIdM5UmjSyRgjPqnQ2Tn"></re-captcha>
         <div class="form-group text-left">
-            <button class="btn-1">SEND</button>
+            <button  class="btn-1">SEND</button>
         </div>
     </form>
     <!-- End of Content -->
