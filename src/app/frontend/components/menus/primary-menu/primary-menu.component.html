@@ -1,42 +1,42 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white thick-border-bottom">
   <div class="container">
   <a class="navbar-brand" routerLink=""><img id="logo" src="./assets/logo.svg" alt=""></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+  <button class="navbar-toggler my-3" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
     aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" routerLink="">Home<span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>Home<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/about">About</a>
+        <a class="nav-link" routerLink="/about" routerLinkActive="active">About</a>
       </li>
 
         <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+        <a class="nav-link dropdown-toggle" routerLinkActive="active" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false">
             Services
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" routerLink="services/janitorial-services">Janitorial Services</a>
-            <a class="dropdown-item" routerLink="services/floor-maintenance">Floor Maintenance</a>
-            <a class="dropdown-item" routerLink="services/green-cleaning-services">Green Cleaning</a>
+            <a class="dropdown-item" routerLink="services/janitorial-services" routerLinkActive="active">Janitorial Services</a>
+            <a class="dropdown-item" routerLink="services/floor-maintenance" routerLinkActive="active">Floor Maintenance</a>
+            <a class="dropdown-item" routerLink="services/green-cleaning-services" routerLinkActive="active">Green Cleaning</a>
           </div>
         </li>
 
       <li class="nav-item">
-        <a class="nav-link" routerLink="/our-difference">Our Difference</a>
+        <a class="nav-link" routerLink="/our-difference" routerLinkActive="active">Our Difference</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/our-clients">Our Clients</a>
+        <a class="nav-link" routerLink="/our-clients" routerLinkActive="active">Our Clients</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/contact">Contact</a>
+        <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
       </li>
     </ul>
   </div>
   </div>
 
-</nav>
+</nav>routerLinkActive="active" 

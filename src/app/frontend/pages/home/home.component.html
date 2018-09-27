@@ -1,52 +1,55 @@
 <app-slider></app-slider>
 <app-floor-rejuvenation-discount></app-floor-rejuvenation-discount>
-<div class="full-width  primary-background">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-4 my-5 text-center" *ngFor="let item of content.whyChooseUs.features">
-                <div class="content text-left">
-                    <div class="content-header">
-                        <!--<img src="{{item.icon.url}}" alt="{{item.icon.altText}}" class="text-center">-->
-                        <h5 class="text-center">{{item.heading}}</h5>
+
+<div class="primary-background-center d-flex">
+    <div class="container text-center align-items-md-center align-self-md-center">
+            <div class="row">
+                <div class="col-12 col-md-4 my-5 text-center" *ngFor="let item of content.whyChooseUs.features">
+                    <div class="content text-left">
+                        <div class="content-header">
+                            <!--<img src="{{item.icon.url}}" alt="{{item.icon.altText}}" class="text-center">-->
+                            <h5 class="text-center">{{item.heading}}</h5>
+                        </div>
+                        <!-- End of Content Header -->
+                        <div class="content-body">
+                            <p>{{item.text}}</p>
+                        </div>
+                        <!-- End of Content Body -->
                     </div>
-                    <!-- End of Content Header -->
-                    <div class="content-body">
-                        <p>{{item.text}}</p>
-                    </div>
-                    <!-- End of Content Body -->
                 </div>
             </div>
-        </div>
     </div>
 </div>
+
 <!-- Our Features -->
 <app-our-features></app-our-features>
 
-<!-- Our Core Values -->
-<div class="image-background-1">
-    <div class="container text-center ">
-        <h2>WE WILL HELP YOU PROVIDE A HEALTHY CLEAN ENVIRONMENT</h2>
-        <p class="pb-5 pt-2">ISA is committed to providing the highest quality commercial cleaning service available by exceeding the
-            expectations of
-            our clients, as well as their employees, patients, students, and other visitors to their premises or
-            facilities.</p>
-
-        <div class="row">
-            <div class="col-12 col-md-4" *ngFor="let item of ourCoreValues.values; index as i">
-                <h4>{{item.heading}}</h4>
-                <p>{{item.text}}</p>
-            </div><!-- End of Content Body -->
-        </div>
-    </div>
+<div class="image-background-1 d-flex">
+            <div class="container text-center align-items-md-center align-self-md-center">
+                <h2>WE WILL HELP YOU PROVIDE A HEALTHY CLEAN ENVIRONMENT</h2>
+                <p class="pb-5 pt-2">ISA is committed to providing the highest quality commercial cleaning service available by
+                    exceeding the
+                    expectations of
+                    our clients, as well as their employees, patients, students, and other visitors to their premises or
+                    facilities.</p>
+                
+                <div class="row">
+                    <div class="col-12 col-md-4" *ngFor="let item of ourCoreValues.values; index as i">
+                        <h4>{{item.heading}}</h4>
+                        <p>{{item.text}}</p>
+                    </div>
+                </div>
+            </div>
 </div>
 
 
 <div class="container">
     <div class="row">
-        <div class="col-12 col-md-3">
+        <div class="col-12 col-md-4 col-lg-4 col-xl-3">
+            <img src="./assets/fully-insured.gif" class="img-fluid py-5" alt="Fully Insured">
             <app-contact-form></app-contact-form>
         </div>
-        <div class="col-12 col-md-9">
+        <div class="col-12 col-md-8 col-lg-8 col-xl-9">
             <div class="img-container" style="width: 100%;">
                 <img style="width:100%;" src="./assets/isa-van-45.png" alt="cleaning van">
             </div>

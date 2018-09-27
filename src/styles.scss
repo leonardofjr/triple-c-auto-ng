@@ -39,31 +39,6 @@
 
 
 
-.ml-1 {
-    padding-left: 10px;
-}
-
-.mr-1 {
-    padding-right: 10px;
-}
-
-.mt-1 {
-    padding-top: 30px;
-}
-
-.mb-1 {
-    padding-bottom: 50px;
-}
-
-.text-center {
-    text-align: center;
-}
-.text-right {
-    text-align: right;
-}
-.text-left {
-    text-align: left;
-}
 
 .horizontal-line {
     width: 20%;
@@ -81,6 +56,26 @@
 .img-shadow {
     box-shadow: 10px 10px 25px #888;
 }
+
+.primary-background-center {
+    color: #fff!important;
+    background: rgba(23,26,74,1);
+    background: -moz-linear-gradient(top, rgba(23,26,74,1) 0%, rgba(30,34,92,1) 50%, rgba(23,26,74,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(23,26,74,1)), color-stop(50%, rgba(30,34,92,1)), color-stop(100%, rgba(23,26,74,1)));
+    background: -webkit-linear-gradient(top, rgba(23,26,74,1) 0%, rgba(30,34,92,1) 50%, rgba(23,26,74,1) 100%);
+    background: -o-linear-gradient(top, rgba(23,26,74,1) 0%, rgba(30,34,92,1) 50%, rgba(23,26,74,1) 100%);
+    background: -ms-linear-gradient(top, rgba(23,26,74,1) 0%, rgba(30,34,92,1) 50%, rgba(23,26,74,1) 100%);
+    background: linear-gradient(to bottom, rgba(23,26,74,1) 0%, rgba(30,34,92,1) 50%, rgba(23,26,74,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#171a4a', endColorstr='#171a4a', GradientType=0 );
+    padding: 5em 0;
+    margin: 2em 0;
+
+    @include breakpoint(md) {
+            height: 100vh;
+
+    }
+}
+
 
 .primary-background {
     color: #fff!important;
