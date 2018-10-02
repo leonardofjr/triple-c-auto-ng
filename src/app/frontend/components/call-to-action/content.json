@@ -7,6 +7,22 @@
                     "url": ""
                 },
                 {
+                    "text": "Task List",
+                    "url": ""
+                },
+                {
+                    "text": "Time Logs",
+                    "url": ""
+                },
+                {
+                    "text": "Training",
+                    "url": ""
+                },
+                {
+                    "text": "Inspections",
+                    "url": ""
+                },
+                {
                     "text": "Commercial Cleaning",
                     "url": ""
                 },
@@ -19,7 +35,7 @@
                     "url": "#"
                 },
                 {
-                    "text": "Genearl Cleaning",
+                    "text": "General Cleaning",
                     "url": "#"
                 },
                 {
@@ -32,10 +48,6 @@
                 },
                 {
                     "text": "Buffing, Stripping & Waxing",
-                    "url": "#"
-                },
-                {
-                    "text": "Supervised",
                     "url": "#"
                 },
                 {

@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpBackend } from '@angular/common/http';
+import { Location } from '@angular/common';
+import { Form } from './Form';
+import { Observable, throwError } from 'rxjs';
+import { catchError, retry, finalize } from 'rxjs/operators';
+import { MailService } from '../../../mail.service';
 
 @Component({
   selector: 'app-contact-form',
@@ -7,8 +12,9 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./contact-form.component.scss']
 })
 export class ContactFormComponent implements OnInit {
+  form: Form;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private mailService: MailService, private location: Location) { }
 
   ngOnInit() {
   }
@@ -16,10 +22,14 @@ export class ContactFormComponent implements OnInit {
     console.log(`Resolved captcha with response ${captchaResponse}:`);
   }
 
-  log(a) {
-    console.log(a);
-  }
-  sendQuote() {
+  onSubmit(e, a) {
+    e.preventDefault();
+    this.mailService.sendMail(a)
+    .subscribe(data => {
+      this.location.back()
+    });
 
   }
+
+
 }

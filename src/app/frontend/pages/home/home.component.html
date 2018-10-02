@@ -3,9 +3,10 @@
 
 <div class="primary-background-center d-flex">
     <div class="container text-center align-items-md-center align-self-md-center">
+            <h2>Why Us?</h2>
             <div class="row">
                 <div class="col-12 col-md-4 my-5 text-center" *ngFor="let item of content.whyChooseUs.features">
-                    <div class="content text-left">
+                    <div class="content">
                         <div class="content-header">
                             <!--<img src="{{item.icon.url}}" alt="{{item.icon.altText}}" class="text-center">-->
                             <h5 class="text-center">{{item.heading}}</h5>
@@ -50,9 +51,8 @@
             <app-contact-form></app-contact-form>
         </div>
         <div class="col-12 col-md-8 col-lg-8 col-xl-9">
-            <div class="img-container" style="width: 100%;">
-                <img style="width:100%;" src="./assets/isa-van-45.png" alt="cleaning van">
-            </div>
+                <img class="img-fluid" src="./assets/isa-van-45.png" alt="cleaning van">
+                <app-call-to-action></app-call-to-action>
         </div>
     </div>
 </div>

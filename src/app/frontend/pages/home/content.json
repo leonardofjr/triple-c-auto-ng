@@ -1,11 +1,9 @@
 {
     "whyChooseUs": {
-        "mainHeading": "Why Choose Us",
-        "text": "We are confident that our prices for cleaning services and cleaning quality will be acceptable for you.",
-        "features": [
+            "features": [
             {
-                "heading": "QUALITY CONTROL",
-                "text": "A diverse client base has helped us develop our quality control program. Our quality control program stresses active involvement of management, employees and clients.",
+                "heading": "GREEN CLEAN",
+                "text": "We know the harm cleaning products and airborne dust can do to our environment and our mission is to make this world a cleaner and a healthier place.",
                 "icon": {
                     "altText": "icon",
                     "url": "#"
@@ -13,7 +11,7 @@
             },
             {
                 "heading": "EXPERIENCE",
-                "text": "ISA has been providing cleaning services for more than 20 years. There isn't a job that we haven't faced! From commercial offices to restauraunts, name the place, we've done it!",
+                "text": "For over 20 years we have provided commercial cleaning services in schools, churches, government buildings, offices all around the Great Toronto Area such as Stouffville, Markham and Toronto.",
                 "icon": {
                     "altText": "icon",
                     "url": "#"
@@ -37,7 +35,7 @@
             },
             {
                 "heading": "PERFORMANCE ASSURANCE PROGRAM",
-                "text": "Our program is developed with your company and your requirements in mind. Supervisors visit your site to inspect that all tasks are being completed by our employees.A copy of the inspection is available for you to review.",
+                "text": "Our four-step program is designed to keep you assure that we are always performing at a maximum level to keep your facility clean and as healthy as possible.",
                 "icon": {
                     "altText": "icon",
                     "url": "#"
@@ -45,7 +43,7 @@
             },
             {
                 "heading": "FLEXIBLE PROGRAMS",
-                "text": "ISA offers flexible cleaning service programs to fit your budget. Affordability isn't an issue when hiring ISA. Each program is customized to fit the requirements of your facility.",
+                "text": "ISA offers flexible cleaning service programs to fit your budget. Each program is customized to fit the requirements of your facility.",
                 "icon": {
                     "altText": "icon",
                     "url": "#"

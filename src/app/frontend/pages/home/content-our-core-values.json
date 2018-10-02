@@ -2,16 +2,16 @@
     "ourCoreValues": {
             "values":  [
                 {
-                    "heading" : "SAFETY AND SUSTAINABILITY",
-                    "text" : "Many cleaning companies sacrifice their profit for your health. We believe as a company that provides cleaning services that it is our duty to keep your workplace environment as healthy and clean as possible. "
+                    "heading" : "INTENSITY",
+                    "text" : "We force ourselves to surpass your expectations."
                  },
                 {
-                    "heading" : "KNOWLEDGE",
-                    "text" : "Your current cleaning company could be harming your workplace environment with dangerous chemicals without even knowning it. It requires knowledge to know what cleaning products to use for what given job."
+                    "heading" : "INTELLIGENCE",
+                    "text" : "We have the knowledge on the importance of a healthy and clean environment."
                       },
                 {
-                    "heading" : "COMMITMENT",
-                    "text" : "We are commited to never sacrifice your health for our profit. ISA is commited to keeping our employees and your facility as safe as possible for an affordable price. We are commited to excel your expectations."
+                    "heading" : "INTEGRITY",
+                    "text" : "We are commited to never sacrifice your health for our profit."
                  }
             ]
     }

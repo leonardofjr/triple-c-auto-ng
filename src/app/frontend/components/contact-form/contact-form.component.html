@@ -5,7 +5,7 @@
     };
 </script>
 
-    <form method="GET">
+    <form #contactForm="ngForm" method="post" (ngSubmit)="onSubmit($event, contactForm.value)">
         <div class="content">
             <div class="form-title">
                 <span style="display: block; padding-bottom: 7px;">Get a</span>
@@ -33,7 +33,7 @@
             </div>
         </div>
         <div class="form-group">
-            <input ngModel required pattern="email"  #email="ngModel" name="email" type="email" placeholder="Your Email*">
+            <input ngModel required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"  #email="ngModel" name="email" type="email" placeholder="Your Email*">
             <div class="alert alert-danger" *ngIf="email.touched && !email.valid">
                 <div *ngIf="email.errors.required">
                     Email is required.
@@ -44,18 +44,15 @@
             </div>
         </div>
         <div class="form-group">
-            <input ngModel required pattern="phone" #phone="ngModel" name="phone" type="tel" placeholder="Your Phone">
+            <input ngModel  pattern="^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$" #phone="ngModel" name="phone" type="tel" placeholder="Your Phone">
             <div class="alert alert-danger" *ngIf="phone.touched && !phone.valid">
-                <div *ngIf="phone.errors.required">
-                    Phone is required.
-                </div>
                 <div *ngIf="phone.errors.pattern">
                     Please enter a vallid phone number.
                 </div>
             </div>
         </div>
         <div class="form-group">
-            <textarea ngModel  type="text" minlength="10" #interest="ngModel" name="interest" placeholder="Your Interested In?*"></textarea>
+            <textarea ngModel  required type="text" minlength="10" #interest="ngModel" name="interest" placeholder="Your Interested In?*"></textarea>
             <div class="alert alert-danger" *ngIf="interest.touched && !interest.valid">
                 <div *ngIf="interest.errors.required">
                     What are you inquiring about?
