@@ -5,6 +5,7 @@ import { Form } from './Form';
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry, finalize } from 'rxjs/operators';
 import { MailService } from '../../../mail.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-contact-form',
@@ -14,7 +15,7 @@ import { MailService } from '../../../mail.service';
 export class ContactFormComponent implements OnInit {
   form: Form;
 
-  constructor(private http: HttpClient, private mailService: MailService, private location: Location) { }
+  constructor(private http: HttpClient, private mailService: MailService, private location: Location, private router : Router) { }
 
   ngOnInit() {
   }
@@ -26,7 +27,8 @@ export class ContactFormComponent implements OnInit {
     e.preventDefault();
     this.mailService.sendMail(a)
     .subscribe(data => {
-      this.location.back()
+      this.router.navigateByUrl('');
+
     });
 
   }

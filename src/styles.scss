@@ -70,8 +70,12 @@
     padding: 5em 0;
     margin: 2em 0;
 
-    @include breakpoint(md) {
+    @include breakpoint(lg) {
             height: 100vh;
+
+    }
+    @include breakpoint(ipad-landscape) {
+            height: initial;
 
     }
 }

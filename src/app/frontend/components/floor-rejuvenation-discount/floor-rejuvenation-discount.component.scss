@@ -1,0 +1,7 @@
+@import "src/scss/_mixins.scss";
+
+#floor-rejuvenation {
+    @include breakpoint(md) {
+        height: 100vh;
+    } 
+}
