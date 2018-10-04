@@ -19,20 +19,32 @@
             display: flex;
             flex-direction: column;
             color: #fff;
+            width: 100%;
         }
 
         @include breakpoint(md) {
+            .content {
+             width: 60%;
+            }
+
             img {
                 height: 100vh;
             }
         }
         @include breakpoint(ipad-landscape) {
+            
+            .content {
+                width: 90%;
+            }
             img {
                 height: 500px;
             }
         }
 
         @include breakpoint(ipad-portrait) {
+            .content {
+                width: 80%;
+            }
             img {
                 height: 500px;
             }

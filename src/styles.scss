@@ -74,6 +74,11 @@
             height: 100vh;
 
     }
+
+    @include breakpoint(md) {
+            height: initial;
+
+    }
     @include breakpoint(ipad-landscape) {
             height: initial;
 

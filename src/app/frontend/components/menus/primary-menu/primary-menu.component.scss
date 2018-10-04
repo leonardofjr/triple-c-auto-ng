@@ -1,12 +1,21 @@
 @import "src/scss/_mixins.scss";
 
 #logo {
-    max-width: 300px;
+    width: 70%;
 }
 
 nav {
-    @include breakpoint(md) {
+    @include breakpoint(xl) {
         height: 100%;
         max-height: 150px;
+
+        .nav-item {
+            width: 20%;
+            text-align: center;
+        }
+        .navbar-nav {
+            width: 100%;
+        }
     }
+    
 }

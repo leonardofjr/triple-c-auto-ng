@@ -1,15 +1,6 @@
 @import "src/scss/_mixins.scss";
 
-#logo {
-    width: 100%;
-}
 
-nav {
-    @include breakpoint(md) {
-        height: 100%;
-        max-height: 150px;
-    }
-}
 body {
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
@@ -17,13 +8,6 @@ body {
     font-size: 17px;
     transition: padding-left 500ms;
     padding-left: 0;
-}
-
-main {
-    padding-top: 182px;
-    @include breakpoint(md) {
-       padding-top: 129px;
-    }
 }
 
 
