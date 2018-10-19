@@ -14,21 +14,27 @@ import { Router } from '@angular/router';
 })
 export class ContactFormComponent implements OnInit {
   form: Form;
-
   constructor(private http: HttpClient, private mailService: MailService, private location: Location, private router : Router) { }
-
+  submit:boolean = false;
   ngOnInit() {
+
   }
   resolved(captchaResponse: string) {
     console.log(`Resolved captcha with response ${captchaResponse}:`);
   }
 
+  disableButton(element) {
+    document.getElementById(element).setAttribute('disabled', '');
+    
+  }
+
   onSubmit(e, a) {
     e.preventDefault();
     this.mailService.sendMail(a)
-    .subscribe(data => {
+    .subscribe((data) => {
       this.router.navigateByUrl('');
-
+      this.submit = true;
+      this.disableButton('submitBtn')
     });
 
   }

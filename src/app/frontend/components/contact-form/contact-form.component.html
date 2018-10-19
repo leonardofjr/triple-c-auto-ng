@@ -66,7 +66,10 @@
         </div>
         <re-captcha class="re-captcha"  (resolved)="resolved($event)" data-size="compact" siteKey="6LcjkG8UAAAAAA_s6dDAQIdM5UmjSyRgjPqnQ2Tn"></re-captcha>
         <div class="form-group text-left">
-            <button  class="btn-1">SEND</button>
+            <button type="button" id="submitBtn"  class="btn-1">SEND</button>
+            <div *ngIf="this.submit;">
+                We will contact you soon.
+            </div>
         </div>
     </form>
     <!-- End of Content -->

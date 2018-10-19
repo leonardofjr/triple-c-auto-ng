@@ -1,8 +1,9 @@
-
+<div id="service-list">
   <div class="row mt-4">
-    <div class="col-md-12" style="column-count: 2">
+    <div class="col-md-12">
         <ul>
-          <li *ngFor="let item of services.cleaningServicesList.list.list1"><span class="char-checkmark">✔</span><a class="pl-3" target="_self">{{item.text}}</a><br></li>
+          <li *ngFor="let item of services.cleaningServicesList.list.list1">{{item.text}}</li>
         </ul>
     </div>
   </div>
+</div>

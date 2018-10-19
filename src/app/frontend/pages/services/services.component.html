@@ -1,9 +1,9 @@
   <div id="services" class="container">
     <h1 class="text-center">SERVICES</h1>
     <div class="row">
-      <div class="col-md-4 col-lg-4 col-xl-3 order-2 order-md-1" >
+      <div id="side-menu" class="col-md-4 col-lg-4 col-xl-3 order-2 order-md-1" >
         <div *ngFor="let item of content.services">
-           <a class="menu-bg" routerLink="{{item.url}}" routerLinkActive="active">{{item.service}}</a>
+           <a class="menu-item" routerLink="{{item.url}}" routerLinkActive="active">{{item.service}}</a>
         </div>
         <img src="./assets/isa-van-front.png" class="img-fluid pt-5" alt="Fully Insured">
         <img src="./assets/fully-insured.gif" class="img-fluid py-5" alt="Fully Insured">

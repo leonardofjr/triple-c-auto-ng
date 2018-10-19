@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+//import { HttpClient } from '@angular/common/http';
 import { User } from './User';
 
 @Component({
@@ -14,11 +14,11 @@ export class AppComponent implements OnInit {
   date = new Date();
   year = this.date.getFullYear();
 
-  constructor(private http: HttpClient) {}
+//  constructor(private http: HttpClient) {}
   ngOnInit() {
-    this.http.get<User>('http://localhost:8000/auth').subscribe(data => {
-      console.log(data);
-      this.user = data;
-    })
+//    this.http.get<User>('http://localhost:8000/auth').subscribe(data => {
+   //   console.log(data);
+    //  this.user = data;
+   // })
   }
 }

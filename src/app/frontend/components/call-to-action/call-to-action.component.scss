@@ -1,7 +1,22 @@
-.link-style {
-    color: #fff;
-}
+@import "src/scss/_mixins";
 
-ul {
-    list-style-type: none;
+#service-list {
+    ul {
+        list-style-type: none;
+    }
+    ul li {
+        padding: 5px;
+    }
+
+    ul li:before {
+        content: '✔'; 
+        font-size: 1.2em;
+        color: red;
+        padding-right: 5px;
+    }
+    @include breakpoint('md') {
+        ul {
+            columns: 2;
+        }
+    }
 }
