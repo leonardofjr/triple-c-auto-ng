@@ -28,14 +28,17 @@ export class ContactFormComponent implements OnInit {
     
   }
 
-  onSubmit(e, a) {
-    e.preventDefault();
-    this.mailService.sendMail(a)
-    .subscribe((data) => {
-      this.router.navigateByUrl('');
-      this.submit = true;
-      this.disableButton('submitBtn')
-    });
+  onSubmit(e, formData) {
+    if (formData) {
+      e.preventDefault();
+      this.mailService.sendMail(formData)
+        .subscribe((data) => {
+          this.router.navigateByUrl('');
+          this.submit = true;
+          this.disableButton('submitBtn')
+        });
+    }
+
 
   }
 

@@ -52,7 +52,7 @@
             </div>
         </div>
         <div class="form-group">
-            <textarea ngModel  required type="text" minlength="10" #interest="ngModel" name="interest" placeholder="Your Interested In?*"></textarea>
+            <textarea ngModel  required type="text" minlength="10" #interest="ngModel" name="interest" placeholder="Your Inquiry?*"></textarea>
             <div class="alert alert-danger" *ngIf="interest.touched && !interest.valid">
                 <div *ngIf="interest.errors.required">
                     What are you inquiring about?

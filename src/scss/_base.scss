@@ -6,7 +6,7 @@ body {
     transition: padding-left 500ms;
    padding-left: 0;
 }
-
+@import "src/scss/_variables.scss";
 
 ul {
     padding-left: 1em;
