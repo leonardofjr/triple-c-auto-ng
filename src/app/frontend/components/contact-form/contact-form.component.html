@@ -5,7 +5,7 @@
     };
 </script>
 
-    <form #contactForm="ngForm" method="post" (ngSubmit)="onSubmit($event, contactForm.value)">
+    <form #contactForm="ngForm" action="/mail" method="post" (ngSubmit)="onSubmit($event, contactForm.value)">
         <div class="content">
             <div class="form-title">
                 <span style="display: block; padding-bottom: 7px;">Get a</span>
@@ -66,7 +66,7 @@
         </div>
         <re-captcha class="re-captcha"  (resolved)="resolved($event)" data-size="compact" siteKey="6LcjkG8UAAAAAA_s6dDAQIdM5UmjSyRgjPqnQ2Tn"></re-captcha>
         <div class="form-group text-left">
-            <button type="button" id="submitBtn"  class="btn-1">SEND</button>
+            <button type="submit" id="submitBtn" class="btn-1">SEND</button>
             <div *ngIf="this.submit;">
                 We will contact you soon.
             </div>

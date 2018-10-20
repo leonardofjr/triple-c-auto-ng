@@ -19,7 +19,7 @@ const httpOptions = {
 })
 
 export class MailService {
-  url = 'http://localhost:8000/mail';
+  url = 'http://isaclean.ca/mail';
 
 
   constructor(private http: HttpClient) { }

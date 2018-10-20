@@ -25,11 +25,9 @@ export class ContactFormComponent implements OnInit {
 
   disableButton(element) {
     document.getElementById(element).setAttribute('disabled', '');
-    
   }
 
   onSubmit(e, formData) {
-    if (formData) {
       e.preventDefault();
       this.mailService.sendMail(formData)
         .subscribe((data) => {
@@ -37,9 +35,6 @@ export class ContactFormComponent implements OnInit {
           this.submit = true;
           this.disableButton('submitBtn')
         });
-    }
-
-
   }
 
 
