@@ -1,20 +1,8 @@
   <div id="services" class="container">
     <h1 class="text-center">SERVICES</h1>
     <div class="row">
-      <div id="side-menu" class="col-md-4 col-lg-4 col-xl-3 order-2 order-md-1" >
-        <div class="py-3">
-          <div *ngFor="let item of content.services">
-            <a class="menu-item" routerLink="{{item.url}}" routerLinkActive="active">{{item.service}}</a>
-          </div>
-        </div>
-        <img src="./assets/isa-van-front.png" class="img-fluid py-5 " alt="Our white company van">
-        <img src="./assets/fully-insured.gif" class="img-fluid py-5 " alt="Full insured">
-        <app-contact-form></app-contact-form>
-      </div>
-      
-     
-      <div class="col-md-8 col-lg-8 col-xl-9 order-1 order-md-12">
-        <router-outlet></router-outlet>
+      <div *ngFor="let item of content.primaryMenu[1].submenu" class="col-md-4">
+          <h2>{{item.name}}</h2>
       </div>
     </div>
   </div>

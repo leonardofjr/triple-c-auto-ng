@@ -5,6 +5,8 @@ body {
     font-size: 17px;
     transition: padding-left 500ms;
    padding-left: 0;
+   color: #fff;
+   background-color: $primary-color;
 }
 @import "src/scss/_variables.scss";
 
@@ -20,7 +22,9 @@ br {
     margin: auto;
 }
 
-
+a {
+    color: #fff;
+}
 .bg-white {
     background-color: white;
 }

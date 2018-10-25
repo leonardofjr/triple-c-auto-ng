@@ -1,0 +1,49 @@
+{
+    "primaryMenu" : [
+        {
+            "name": "HOME",
+            "route": "/"
+        }, 
+        {
+            "name": "SERVICES",
+            "route": "/services",
+            "submenu": [
+                {
+                    "name": "Preventative Maintenance"
+                },
+                {
+                    "name": "Driveability & Engine Lights"
+                },
+                {
+                    "name": "Engine & Transmission"
+                },
+                {
+                    "name": "Brakes"
+                },
+                {
+                    "name": "Suspension & Steering"
+                },
+                {
+                    "name": "A/C Cooling & Heating"
+                },
+                {
+                    "name": "Emissions Control"
+                },
+                {
+                    "name": "Fuel System"
+                },
+                {
+                    "name": "Starting & Charging"
+                }
+            ]
+        },
+        {
+            "name": "ABOUT",
+            "route": "/about"
+        },
+        {
+            "name": "CONTACT",
+            "route": "/contact"
+        }
+    ] 
+ }

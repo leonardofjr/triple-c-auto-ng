@@ -1,6 +1,8 @@
 #contact-form {
     padding: 1em;
     margin:0;
+    color: black;
+    background: white;
     form {
         .form-group {
             margin: .8em 0;
@@ -12,6 +14,7 @@
             border-top: none;
             border-left: none;
             border-right: none;
+            border-bottom: 1px solid black;
             font-size:1em;        
             box-sizing: border-box;
 
@@ -20,7 +23,8 @@
         .form-group textarea  {
             width: 100%;
             padding: .4em .8em;
-            height: 190px;
+            height: 50px;
+            border-bottom: 1px solid black;
             box-sizing: border-box; 
 
         }  

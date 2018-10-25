@@ -21,18 +21,6 @@ nav {
     
 }
 
-
-
 .active > a {
-    color: $primary-color;
-}
-
-.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
-    color: $secondary-color;
-}
-
-.dropdown-item.active, .dropdown-item:active {
-    color: #fff;
-    text-decoration: none;
-    background-color: $secondary-color;
+    color: red;
 }
