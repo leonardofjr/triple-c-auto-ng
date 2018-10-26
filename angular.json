@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "../isa/public/app",
+            "outputPath": "../triple-c-automotive-laravel/public/app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -128,7 +128,7 @@
       }
     }
   },
-  "defaultProject": "isa-ng",
+  "defaultProject": "triplecauto-ng",
   "schematics": {
     "@schematics/angular:component": {
       "styleext": "scss"
