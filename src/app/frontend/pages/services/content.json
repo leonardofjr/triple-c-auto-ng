@@ -1,0 +1,97 @@
+{ "services":
+    [
+        {
+            "name": "Preventative Maintenance",
+            "listPoints": [
+                "Lube Oil and Filter Service",
+                "Transmission Flush",
+                "Coolant Flush",
+                "Brake Fluid Flush",
+                "Power Steering Fluid Flush",
+                "Fuel Injector Flush",
+                "Differntial & Transfer Case Service",
+                "Spring & Fall Inspections",
+                "Dealer Recommended"
+            ]
+        },
+        {
+            "name": "Driveability & Engine Lights",
+            "listPoints": [
+                "Diagnostic analysis of drivability issues",
+                "Diagnose check engine & other warning lights",
+                "Diagnose and repair electrical issues",
+                "ECU and BCM programming and updating (most vehicles)"
+            ]
+        },
+        {
+            "name": "Engine & Transmission",
+            "listPoints": [
+                "Tune ups and intake service",
+                "Cylinder Head replacement and machining",
+                "Intake gasket replacement",
+                "Cylinder head gasket replacement",
+                "Engine reseals and replacement",
+                "Transmission repair and replacement"
+            ]
+        },
+        {
+            "name": "Brakes",
+            "listPoints": [
+                "Brake suspension",
+                "Replacement and service of disc brake systems",
+                "Machining of drums and discs",
+                "Replacement of calipers, wheel cylinder and flex hoses",
+                "Brake line replacements and repairs",
+                "ABS diagnostics, service and repairs"
+            ]
+        },
+        {
+            "name": "Suspension & Steering",
+            "listPoints": [
+                "Complete suspension system inspections",
+                "Computerized Alignment",
+                "Replacement of Shocks and Struts",
+                "Replacement of Ball joints",
+                "Inner and outer Tie rod ends",
+                "Service and replacement of wheel bearings",
+                "Power steering racks and hydraulic system service and repairs",
+                "Stabilizer link kits, bushings and stabilizer"
+            ]
+        },
+        {
+            "name": "A/C, Cooling & Heating",
+            "listPoints": [
+                "A/C system charge and leak test",
+                "Replacement of all A/C components",
+                "Radiators and Condensers",
+                "Thermostats and water valves",
+                "Replacement and inspection of belts and hoses",
+                "Diagnostic and repairs to electronic components",
+                "Flush or replacement of heater cores"
+            ]
+        },
+        {
+            "name": "Emissions Control",
+            "listPoints": [
+                "Emissions testing",
+                "Emission failure diagnostic and repair"
+            ]
+        },
+        {
+            "name": "Fuel System",
+            "listPoints": [
+                "Fuel line repair and replacement",
+                "Fuel pump",
+                "Injector flush and replacement"
+            ]
+        },
+        {
+            "name": "Starting & Charging",
+            "listPoints": [
+                "AVR Tests and printouts",
+                "Battery Replacements",
+                "Alternators & Starters"
+            ]
+        }
+    ]
+}

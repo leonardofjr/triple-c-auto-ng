@@ -19,7 +19,7 @@ const httpOptions = {
 })
 
 export class MailService {
-  url = 'http://isaclean.ca/mail';
+  url = 'http://triplecauto.ca/mail';
 
 
   constructor(private http: HttpClient) { }

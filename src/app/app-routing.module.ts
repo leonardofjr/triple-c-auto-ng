@@ -6,7 +6,6 @@ import { ServicesComponent } from './frontend/pages/services/services.component'
 const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },
   { path: '', component: HomeComponent },
-  { path: 'about', loadChildren: './frontend/pages/about/about.module#AboutModule' },
   { path: 'services', component: ServicesComponent },
   { path: 'contact', loadChildren: './frontend/pages/contact/contact.module#ContactModule' }
 ];

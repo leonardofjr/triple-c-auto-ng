@@ -7,7 +7,7 @@ declare var require:any;
  
 })
 export class HomeComponent implements OnInit {
-  content = require('./content.json');
+  content = require('../../../menu.json');
   constructor() { }
 
   ngOnInit() {

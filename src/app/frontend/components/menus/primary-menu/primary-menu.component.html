@@ -1,6 +1,9 @@
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
- <h1>TRIPLE C AUTOMOTIVE</h1>
+    <div id="logo">
+      <h1>TRIPLE C</h1>
+      <small>Complete Car Care</small>
+      </div>
   <button class="navbar-toggler my-3" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
     aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -10,7 +13,6 @@
       <li *ngFor="let item of content.primaryMenu" class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>
         <a class="nav-link" routerLink="{{item.route}}">{{item.name}}<span class="sr-only">(current)</span></a>
       </li>
-
     </ul>
   </div>
   </div>

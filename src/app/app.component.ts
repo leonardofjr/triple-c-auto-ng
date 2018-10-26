@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 //import { HttpClient } from '@angular/common/http';
 import { User } from './User';
 
+declare var require:any;
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,7 +11,7 @@ import { User } from './User';
 })
 export class AppComponent implements OnInit {
   title = 'isa-ng';
-  company_name = "ISA"
+  content = require("./company-profile.json")
   user: User;
   date = new Date();
   year = this.date.getFullYear();

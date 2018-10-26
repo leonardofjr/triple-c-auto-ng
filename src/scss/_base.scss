@@ -6,12 +6,17 @@ body {
     transition: padding-left 500ms;
    padding-left: 0;
    color: #fff;
-   background-color: $primary-color;
+   background-image: url("/assets/main-wallpaper.gif");
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 @import "src/scss/_variables.scss";
-
+.bg-dark {
+    background-color: initial!important;
+}
 ul {
-    padding-left: 1em;
+        padding-left: 3em;
+
 }
 
 br {  
@@ -22,9 +27,6 @@ br {
     margin: auto;
 }
 
-a {
-    color: #fff;
-}
 .bg-white {
     background-color: white;
 }
@@ -41,21 +43,3 @@ a {
 .char-checkmark {
     color: rgb(255, 0, 0);
 }
-
-
-.image-background-1 {
-    background-image: url('./assets/cleaning-supplies-mobile.gif');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: #fff;
-    padding: 5em 0;
-    margin: 2em 0;
-
-    @include breakpoint(md) {
-            background-image: url('./assets/cleaning-supplies-monitor.gif');
-            height: 100vh;
-
-    }
-}
-

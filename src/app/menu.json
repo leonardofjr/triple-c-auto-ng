@@ -38,10 +38,6 @@
             ]
         },
         {
-            "name": "ABOUT",
-            "route": "/about"
-        },
-        {
             "name": "CONTACT",
             "route": "/contact"
         }

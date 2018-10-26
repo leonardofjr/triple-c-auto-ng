@@ -1,8 +1,11 @@
   <div id="services" class="container">
-    <h1 class="text-center">SERVICES</h1>
+    <h1 class="text-center mt-5">SERVICES</h1>
     <div class="row">
-      <div *ngFor="let item of content.primaryMenu[1].submenu" class="col-md-4">
-          <h2>{{item.name}}</h2>
+      <div *ngFor="let item of content.services" class="col-md-4 my-5">
+          <h2 class="pb-3">{{item.name}}</h2>
+          <ul>
+            <li class="pb-2" *ngFor="let item of item.listPoints">{{item}}</li>
+          </ul>
       </div>
     </div>
   </div>
